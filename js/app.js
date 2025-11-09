@@ -29,7 +29,7 @@ const charData = {
       KE: {
         name: "Knight Emperor",
         role: "Physical DPS",
-        desc: "The Knight of Elrios, forging his own path.",
+        desc: "Knight of Elrios, forging his own path.",
         pros: "Great bossing and clearing with good utility tools",
         cons: "Slow casting, limited movement",
         img: "img/portraits/01-ELS/KE.png",
@@ -38,7 +38,7 @@ const charData = {
       RM: {
         name: "Rune Master",
         role: "Magical DPS",
-        desc: "A magic swordsman with a Rune sword technique.",
+        desc: "A magic swordsman with wielding fiery runes.",
         pros: "Good clearing",
         cons: "Very average output and minimal debuffing capability",
         img: "img/portraits/01-ELS/RM.png",
@@ -58,7 +58,7 @@ const charData = {
         role: "Magical DPS",
         desc: "Guardian of Elrios.",
         pros: "Easiest Elboy to play",
-        cons: "Mostly just another DPS",
+        cons: "Generic DPS",
         img: "img/portraits/01-ELS/GN.png",
         paths: ["KE", "RM", "IM", "GN"]
       },
@@ -70,7 +70,7 @@ const charData = {
       AES: {
         name: "Aether Sage",
         role: "Magical DPS",
-        desc: "An elemental master.",
+        desc: "An accomplished scholar in the elements.",
         pros: "Good rotations and damage",
         cons: "Movement learning curve",
         img: "img/portraits/02-AISHA/AES.png",
@@ -79,8 +79,8 @@ const charData = {
       OZ: {
         name: "Oz Sorcerer",
         role: "Magical DPS",
-        desc: "An elemental master.",
-        pros: "Good rotations and damage",
+        desc: "A mage who wielding dark magic.",
+        pros: "---",
         cons: "Movement learning curve",
         img: "img/portraits/02-AISHA/OZ.png",
         paths: ["AES", "OZ", "MTM", "LA"]
@@ -88,8 +88,8 @@ const charData = {
       MTM: {
         name: "Metamorphy",
         role: "Physical Synergy DPS",
-        desc: "An elemental master.",
-        pros: "Good rotations and damage",
+        desc: "A powerful magical girl.",
+        pros: "Great amp",
         cons: "Movement learning curve",
         img: "img/portraits/02-AISHA/MTM.png",
         paths: ["AES", "OZ", "MTM", "LA"]
@@ -97,8 +97,8 @@ const charData = {
       LA: {
         name: "Lord Azoth",
         role: "Physical Synergy DPS",
-        desc: "An elemental master.",
-        pros: "Good rotations and damage",
+        desc: "An immortal alchemist.",
+        pros: "Good amp",
         cons: "Movement learning curve",
         img: "img/portraits/02-AISHA/LA.png",
         paths: ["AES", "OZ", "MTM", "LA"]
