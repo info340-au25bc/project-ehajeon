@@ -8,6 +8,9 @@ hamMenu.addEventListener('click', () => {
     offScreenMenu.classList.toggle('active');
 })
 
+
+// ============================================================================
+
 // overview expand
 const charsBase = document.querySelectorAll('.base');
 const overview = document.querySelector('.overview');
@@ -95,6 +98,47 @@ const charData = {
         paths: ["AES", "OZ", "MTM", "LA"]
       },
     }
+  },
+  Laby: {
+    name: "Laby",
+    jobs: {
+      ETW: {
+        name: "Eternity Winner",
+        role: "Physical DPS",
+        desc: "A hard-hitting fist-fighter.",
+        pros: "High damage ceiling",
+        cons: "Reliance on active commands can be a learning curve",
+        img: "img/portraits/13-LABY/ETW.png",
+        paths: ["ETW", "RAS", "NL", "TP"]
+      },
+      RAS: {
+        name: "Radiant Soul",
+        role: "Magical Support",
+        desc: "Well-rounded and easy to learn healer.",
+        pros: "Longest freeze and great supporting capabilities, not hard to learn.",
+        cons: "Skill casting can be a bit slow",
+        img: "img/portraits/13-LABY/RAS.png",
+        paths: ["ETW", "RAS", "NL", "TP"]
+      },
+      NL: {
+        name: "Nisha Labyrinth",
+        role: "Physical DPS",
+        desc: "A devoted savior just for Laby.",
+        pros: "Valuable asset on the team",
+        cons: "Rotationally dependent",
+        img: "img/portraits/13-LABY/NL.png",
+        paths: ["ETW", "RAS", "NL", "TP"]
+      },
+      TP: {
+        name: "Twins Picaro",
+        role: "Magical DPS",
+        desc: "The ultimate prankster.",
+        pros: "Ridiculously high damage",
+        cons: "Offers nothing else",
+        img: "img/portraits/13-LABY/TP.png",
+        paths: ["ETW", "RAS", "NL", "TP"]
+      },
+    }
   }
 };
 
@@ -120,6 +164,20 @@ function expandOverview(data) {
       </div>
     </div>
   `;
+}
+
+// quiz results screen
+
+function resultOverview(data) {
+    return `
+    <div class="result-overview">
+      <h3>${data.name}</h3>
+      <h4>Role: ${data.role}</h4>
+      <p>${data.desc}</p>
+      <p><strong>Pros:</strong> ${data.pros}</p>
+      <p><strong>Cons:</strong> ${data.cons}</p>
+    </div>
+    `;
 }
 
 // controlling overview elements
@@ -165,3 +223,7 @@ function jobSpecific(jobsData) {
         });
     });
 }
+
+// Testing zone
+const exChar = charData.Laby.jobs.RAS;
+document.querySelector('.result-overlay').innerHTML = resultOverview(exChar);
