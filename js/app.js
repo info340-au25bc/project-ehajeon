@@ -1,11 +1,17 @@
 // menu expand
 const hamMenu = document.querySelector('.hamburger-menu');
-
 const offScreenMenu = document.querySelector('.off-screen-menu');
 
 hamMenu.addEventListener('click', () => {
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
+
+    if (hamMenu.classList.contains('active')) {
+      hamMenu.setAttribute('aria-label', 'Close Navigation');
+    }
+    else {
+      hamMenu.setAttribute('aria-label', 'Open Navigation')
+    }
 })
 
 
@@ -157,7 +163,7 @@ function expandOverview(data) {
     </div>
     <div class="char-info">
         <h3>${data.name}</h3>
-        <h4>Role: ${data.role}</h4>
+        <h4>${data.role}</h4>
         <p>${data.desc}</p>
         <p><strong>Pros:</strong> ${data.pros}</p>
         <p><strong>Cons:</strong> ${data.cons}</p>
