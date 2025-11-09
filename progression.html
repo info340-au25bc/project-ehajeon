@@ -43,16 +43,71 @@
     <!-- character overview again here with portrait-->
     <main>
         <!-- entire container starts here-->
-        <div class="user-profile">
-            <!-- user info -->
-            <div class="user-char">
-                <img src="img/portraits-cropped/03-RENA/AN.png">
-                <div class="user-overlay"></div>
+        <div class="user-progress">
+            <div class="user-profile">
+                <!-- user info -->
+                <h2>Hi, [Username]!</h2>
+                <button>Change Character</button>
+
+                <div class="user-char">
+                    <img src="img/portraits-cropped/03-RENA/AN.png">
+                    <div class="user-overlay">
+                        <h3>Anemos</h3>
+                        <p>Physical DPS</p>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- checklist items -->
+            <div class="checklist">
+                <!-- checklist items -->
+                <div class="box">
+                    <button class="collapsible">Titles</button>
+                        <div class="content">
+                            <ul>
+                                <li><input type="checkbox">Pierce the Heavens</li>
+                                <li><input type="checkbox">Survival of the Cold</li>
+                                <li><input type="checkbox">Black and White</li>
+                                <li><input type="checkbox">Natural Flow</li>
+                            </ul>
+                        </div>
+                </div>
+                
+                <div class="box">
+                <button class="collapsible">Accessories</button>
+                    <div class="content">
+                        <ul>
+                            <li><input type="checkbox">Code of Honor</li>
+                            <li><input type="checkbox">Cooling Engine</li>
+                            <li><input type="checkbox">Baryon's Fur Ornament</li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="box">
+                <button class="collapsible">Gear</button>
+                    <div class="content">
+                        <ul>
+                            <li><input type="checkbox">Rigomor Set</li>
+                            <li><input type="checkbox">Tenebrous Set</li>
+                            <li><input type="checkbox">Exascale</li>
+                        </ul>
+                    </div>
+                </div>
 
-        </div>
+                <div class="box">
+                <button class="collapsible">Misc</button>
+                    <div class="content">
+                        <ul>
+                            <li><input type="checkbox">ESPC</li>
+                            <li><input type="checkbox">Pet</li>
+                            <li><input type="checkbox">Exascale</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
     </main>
 
     <script src="js/app.js"></script> 
