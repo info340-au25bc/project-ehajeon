@@ -543,6 +543,40 @@ a:hover {
     display: block;
 }
 
+/* LOGIN */
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.login, .register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0b0b0d;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.login form, .register form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
 
 /* ID */
 #intro {
@@ -569,6 +603,11 @@ a:hover {
 
     nav {
         flex: 1;
+    }
+
+    .forms {
+        flex-direction: row;
+        left: 230px;
     }
 
     .off-screen-menu {

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Log into account">
+    <meta name="author" content="Elina Jeon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Login or Register</title>
+
+    <link rel="icon" type="image/png" href="img/icons/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- MOBILE-FIRST DESIGN -->
+    <!-- Header bar, about description and banner image, quick links to each resource, side nav for said links and logging in/registering -->
+
+    <!-- NAVIGATION -->
+    <div>
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Character Quiz</a></li>
+                <li><a href="buildparty.html">Party Builder</a></li>
+                <li><a href="progression.html">Progression Guide</a></li>
+            </ul>
+        </div>
+        
+        <nav>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="right-items">
+                <button>login</button>
+                <button id="mode">light</button>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Would rather have these as a pop-up form in the future -->
+        <div class="forms">
+            <div class="login">
+                <h2>Log In</h2>
+                <form action="">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="password">
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+                    <!-- Would rather have these as a pop-up form in the future -->
+            <div class="register">
+                <h2>Register</h2>
+                <form action="">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="password">
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
