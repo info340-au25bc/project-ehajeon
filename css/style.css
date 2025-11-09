@@ -71,9 +71,15 @@ a:hover {
 }
 
 .overview {
-    display: flex;
+    display: none;
+    flex-direction: column;
     background-color: #3b3a3a;
     margin-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+.overview.active {
+    display: flex;
 }
 
 .box {
@@ -235,6 +241,28 @@ a:hover {
     z-index: 1;
 }
 
+.base {
+    filter: grayscale(70%);
+}
+
+.base:hover {
+    filter: none;
+    transition: 0.2s ease;
+}
+
+.job {
+    filter: grayscale(70%);   
+}
+
+.job:hover {
+    filter: none;
+    transition: 0.2s ease;
+}
+
+.job.active {
+    filter: none;
+}
+
 .paths {
     background-color: #0b0b0dc9;
     padding: 10px;
@@ -245,15 +273,15 @@ a:hover {
 .paths ul {
     list-style-type: none;
     margin: 5px;
-    padding: 0;
-    text-align: left;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .paths li {
-    margin: 10px 0;
+    padding: 0 10px;
 }
 
 .paths img {
@@ -316,5 +344,21 @@ a:hover {
 
     .hamburger-menu span {
         display: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .overview {
+        flex-direction: row;
+    }
+
+    .paths ul {
+        padding: 0;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    .paths li {
+        margin: 10px 0;
     }
 }
