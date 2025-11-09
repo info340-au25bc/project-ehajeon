@@ -12,6 +12,7 @@ hamMenu.addEventListener('click', () => {
 const charsBase = document.querySelectorAll('.base');
 const overview = document.querySelector('.overview');
 
+// character data
 const charData = {
   Elsword: {
     name: "Elsword",
@@ -19,19 +20,37 @@ const charData = {
       KE: {
         name: "Knight Emperor",
         role: "Physical DPS",
-        desc: "High burst damage and survivability.",
-        pros: "Strong attacks.",
-        cons: "Slower movement.",
+        desc: "The Knight of Elrios, forging his own path.",
+        pros: "Great bossing and clearing with good utility tools",
+        cons: "Slow casting, limited movement",
         img: "img/portraits/01-ELS/KE.png",
         paths: ["KE", "RM", "IM", "GN"]
       },
       RM: {
         name: "Rune Master",
-        role: "Hybrid DPS",
-        desc: "Balanced between offense and defense.",
-        pros: "Flexible build.",
-        cons: "Average damage.",
+        role: "Magical DPS",
+        desc: "A magic swordsman with a Rune sword technique.",
+        pros: "Good clearing",
+        cons: "Very average output and minimal debuffing capability",
         img: "img/portraits/01-ELS/RM.png",
+        paths: ["KE", "RM", "IM", "GN"]
+      },
+      IM: {
+        name: "Immortal",
+        role: "Physical DPS",
+        desc: "A swordsman with endless potential.",
+        pros: "Impressive damage output",
+        cons: "Subpar clearing",
+        img: "img/portraits/01-ELS/IM.png",
+        paths: ["KE", "RM", "IM", "GN"]
+      },
+      GN: {
+        name: "Genesis",
+        role: "Magical DPS",
+        desc: "Guardian of Elrios.",
+        pros: "Easiest Elboy to play",
+        cons: "Mostly just another DPS",
+        img: "img/portraits/01-ELS/GN.png",
         paths: ["KE", "RM", "IM", "GN"]
       },
     }
@@ -39,18 +58,47 @@ const charData = {
   Aisha: {
     name: "Aisha",
     jobs: {
-      AS: {
+      AES: {
         name: "Aether Sage",
         role: "Magical DPS",
-        desc: "High range AoE mage.",
-        pros: "Strong magic.",
-        cons: "Low defense.",
-        img: "img/portraits/02-AIS/AS.png",
-        paths: ["AS", "VP", "EM", "DW"]
+        desc: "An elemental master.",
+        pros: "Good rotations and damage",
+        cons: "Movement learning curve",
+        img: "img/portraits/02-AISHA/AES.png",
+        paths: ["AES", "OZ", "MTM", "LA"]
+      },
+      OZ: {
+        name: "Oz Sorcerer",
+        role: "Magical DPS",
+        desc: "An elemental master.",
+        pros: "Good rotations and damage",
+        cons: "Movement learning curve",
+        img: "img/portraits/02-AISHA/OZ.png",
+        paths: ["AES", "OZ", "MTM", "LA"]
+      },
+      MTM: {
+        name: "Metamorphy",
+        role: "Physical Synergy DPS",
+        desc: "An elemental master.",
+        pros: "Good rotations and damage",
+        cons: "Movement learning curve",
+        img: "img/portraits/02-AISHA/MTM.png",
+        paths: ["AES", "OZ", "MTM", "LA"]
+      },
+      LA: {
+        name: "Lord Azoth",
+        role: "Physical Synergy DPS",
+        desc: "An elemental master.",
+        pros: "Good rotations and damage",
+        cons: "Movement learning curve",
+        img: "img/portraits/02-AISHA/LA.png",
+        paths: ["AES", "OZ", "MTM", "LA"]
       },
     }
   }
 };
+
+// OVERVIEW FORMAT
 
 function expandOverview(data) {
     return `
@@ -73,6 +121,8 @@ function expandOverview(data) {
     </div>
   `;
 }
+
+// controlling overview elements
 
 charsBase.forEach(icon => {
   icon.addEventListener('click', () => {
