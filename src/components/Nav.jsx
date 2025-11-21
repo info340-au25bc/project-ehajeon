@@ -6,10 +6,10 @@ export function Navigation() {
     <div>
         <div className="off-screen-menu">
             <ul>
-                <li><NavLink to="index.html">Home</NavLink></li>
-                <li><NavLink to="quiz.html">Character Quiz</NavLink></li>
-                <li><NavLink to="buildparty.html">Party Builder</NavLink></li>
-                <li><NavLink to="progression.html">Progression Guide</NavLink></li>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="quiz">Character Quiz</NavLink></li>
+                <li><NavLink to="buildparty">Party Builder</NavLink></li>
+                <li><NavLink to="progression">Progression Guide</NavLink></li>
             </ul>
         </div>
         
@@ -20,7 +20,7 @@ export function Navigation() {
                 <span></span>
             </div>
             <div className="right-items">
-                <a href="login.html">login</a>
+                <a href="login">login</a>
                 <a>light</a>
             </div>
         </nav>
