@@ -1,3 +1,14 @@
+# Updated Content (11/21)
+## Proposal
+- Added lang="en" to <html>
+- Added meta viewport
+
+## Draft 1
+- Added formal header elements
+- Removed a tags from buttons
+- Edited aria labels
+- Streamlined some CSS rules!
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
