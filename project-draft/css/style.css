@@ -191,14 +191,17 @@ a:hover {
     right: 0;
 }
 
-.right-items button {
+.right-items a {
     background-color: #212127;
     color: white;
-    height: 50px;
-    width: 100px;
     margin: 5px 0 0 5px;
+    padding: 16px;
     border: #7878828a solid 0.5px;
     border-radius: 10px;
+}
+
+.right-items a:hover {
+    color: #6fa2ff;
 }
 
 #mode {
