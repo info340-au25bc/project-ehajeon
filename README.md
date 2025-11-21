@@ -1,7 +1,16 @@
-# INFO340 Project
-Project repository for INFO340 by Elina Jeon. Currently updated with the Proposal, latest commit under 'Update: Added hyperlinks to Resources' (Draft 1 pending!).
+# React + Vite
 
-Note that this project was not created through github classrooms. Materials will be moved once the classroom-sourced repository is available!
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# Draft1 Notes
-There's a few missing pieces of data content and visual polishing here and there for the sake of time. Also got a little carried away with some Javascript code to avoid implementing all character information manually! Will update this section as I remember more.
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
