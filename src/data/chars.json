@@ -171,40 +171,40 @@
     "name": "Eve",
     "jobs": {
       "CU": {
-        "name": "Furious Blade",
+        "name": "Code Ultimate",
+        "role": "Magical DPS",
+        "desc": "placeholder",
+        "pros": "placeholder",
+        "cons": "placeholder",
+        "img": "img/portraits/05-EVE/CU.png",
+        "paths": ["CU", "CES", "CS", "CA"]
+      },
+      "CES": {
+        "name": "Code Esencia",
         "role": "Physical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/FB.png",
-        "paths": ["FB", "RH", "NI", "RV"]
-      },
-      "CES": {
-        "name": "Rage Hearts",
-        "role": "Magical DPS",
-        "desc": "placeholder",
-        "pros": "placeholder",
-        "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RH.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/05-EVE/CES.png",
+        "paths": ["CU", "CES", "CS", "CA"]
       },
       "CS": {
-        "name": "Nova Imperator",
+        "name": "Code Sariel",
         "role": "Magical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/NI.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/05-EVE/CS.png",
+        "paths": ["CU", "CES", "CS", "CA"]
       },
       "CA": {
-        "name": "Revenant",
-        "role": "Physical Hybrid",
+        "name": "Code Antithese",
+        "role": "Physical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RV.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/05-EVE/CA.png",
+        "paths": ["CU", "CES", "CS", "CA"]
       }
     }
   },
@@ -213,40 +213,40 @@
     "name": "Chung",
     "jobs": {
       "CC": {
-        "name": "Furious Blade",
-        "role": "Physical DPS",
+        "name": "Comet Crusader",
+        "role": "Physical Hyrbid",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/FB.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/06-CHU/CC.png",
+        "paths": ["CC", "FP", "CENT", "DA"]
       },
       "FP": {
-        "name": "Rage Hearts",
+        "name": "Fatal Phantom",
         "role": "Magical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RH.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/06-CHU/FP.png",
+        "paths": ["CC", "FP", "CENT", "DA"]
       },
       "CENT": {
-        "name": "Nova Imperator",
+        "name": "Centurion",
         "role": "Magical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/NI.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/06-CHU/CENT.png",
+        "paths": ["CC", "FP", "CENT", "DA"]
       },
       "DA": {
-        "name": "Revenant",
-        "role": "Physical Hybrid",
+        "name": "Dius Aer",
+        "role": "Physical Support",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RV.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/06-CHU/DA.png",
+        "paths": ["CC", "FP", "CENT", "DA"]
       }
     }
   },
@@ -255,40 +255,40 @@
     "name": "Ara",
     "jobs": {
       "APS": {
-        "name": "Furious Blade",
-        "role": "Physical DPS",
-        "desc": "placeholder",
-        "pros": "placeholder",
-        "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/FB.png",
-        "paths": ["FB", "RH", "NI", "RV"]
-      },
-      "DEVI": {
-        "name": "Rage Hearts",
-        "role": "Magical DPS",
-        "desc": "placeholder",
-        "pros": "placeholder",
-        "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RH.png",
-        "paths": ["FB", "RH", "NI", "RV"]
-      },
-      "SH": {
-        "name": "Nova Imperator",
-        "role": "Magical DPS",
-        "desc": "placeholder",
-        "pros": "placeholder",
-        "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/NI.png",
-        "paths": ["FB", "RH", "NI", "RV"]
-      },
-      "SU": {
-        "name": "Revenant",
+        "name": "Apsara",
         "role": "Physical Hybrid",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RV.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/07-ARA/APS.png",
+        "paths": ["APS", "DEVI", "SH", "SU"]
+      },
+      "DEVI": {
+        "name": "Devi",
+        "role": "Magical DPS",
+        "desc": "placeholder",
+        "pros": "placeholder",
+        "cons": "placeholder",
+        "img": "img/portraits/07-ARA/DEVI.png",
+        "paths": ["APS", "DEVI", "SH", "SU"]
+      },
+      "SH": {
+        "name": "Shakti",
+        "role": "Physical DPS",
+        "desc": "placeholder",
+        "pros": "placeholder",
+        "cons": "placeholder",
+        "img": "img/portraits/07-ARA/SH.png",
+        "paths": ["APS", "DEVI", "SH", "SU"]
+      },
+      "SU": {
+        "name": "Surya",
+        "role": "Magical Support",
+        "desc": "placeholder",
+        "pros": "placeholder",
+        "cons": "placeholder",
+        "img": "img/portraits/07-ARA/SU.png",
+        "paths": ["APS", "DEVI", "SH", "SU"]
       }
     }
   },
@@ -297,40 +297,40 @@
     "name": "Elesis",
     "jobs": {
       "ES": {
-        "name": "Furious Blade",
-        "role": "Physical DPS",
-        "desc": "placeholder",
-        "pros": "placeholder",
-        "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/FB.png",
-        "paths": ["FB", "RH", "NI", "RV"]
-      },
-      "FL": {
-        "name": "Rage Hearts",
-        "role": "Magical DPS",
-        "desc": "placeholder",
-        "pros": "placeholder",
-        "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RH.png",
-        "paths": ["FB", "RH", "NI", "RV"]
-      },
-      "BQ": {
-        "name": "Nova Imperator",
-        "role": "Magical DPS",
-        "desc": "placeholder",
-        "pros": "placeholder",
-        "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/NI.png",
-        "paths": ["FB", "RH", "NI", "RV"]
-      },
-      "ADR": {
-        "name": "Revenant",
+        "name": "Empire Sword",
         "role": "Physical Hybrid",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RV.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/08-ELE/ES.png",
+        "paths": ["ES", "FL", "BQ", "ADR"]
+      },
+      "FL": {
+        "name": "Flame Lord",
+        "role": "Magical DPS",
+        "desc": "placeholder",
+        "pros": "placeholder",
+        "cons": "placeholder",
+        "img": "img/portraits/08-ELE/FL.png",
+        "paths": ["ES", "FL", "BQ", "ADR"]
+      },
+      "BQ": {
+        "name": "Bloody Queen",
+        "role": "Magical DPS",
+        "desc": "placeholder",
+        "pros": "placeholder",
+        "cons": "placeholder",
+        "img": "img/portraits/08-ELE/BQ.png",
+        "paths": ["ES", "FL", "BQ", "ADR"]
+      },
+      "ADR": {
+        "name": "Adrestia",
+        "role": "Physical Hybrid",
+        "desc": "placeholder",
+        "pros": "placeholder",
+        "cons": "placeholder",
+        "img": "img/portraits/08-ELE/ADR.png",
+        "paths": ["ES", "FL", "BQ", "ADR"]
       }
     }
   },
@@ -339,40 +339,40 @@
     "name": "Add",
     "jobs": {
       "DBR": {
-        "name": "Furious Blade",
+        "name": "Doombringer",
+        "role": "Magical DPS",
+        "desc": "placeholder",
+        "pros": "placeholder",
+        "cons": "placeholder",
+        "img": "img/portraits/09-ADD/DBR.png",
+        "paths": ["DBR", "DOM", "MP", "OM"]
+      },
+      "DOM": {
+        "name": "Dominator",
         "role": "Physical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/FB.png",
-        "paths": ["FB", "RH", "NI", "RV"]
-      },
-      "DOM": {
-        "name": "Rage Hearts",
-        "role": "Magical DPS",
-        "desc": "placeholder",
-        "pros": "placeholder",
-        "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RH.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/09-ADD/DOM.png",
+        "paths": ["DBR", "DOM", "MP", "OM"]
       },
       "MP": {
-        "name": "Nova Imperator",
+        "name": "Mad Paradox",
         "role": "Magical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/NI.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/09-ADD/MP.png",
+        "paths": ["DBR", "DOM", "MP", "OM"]
       },
       "OM": {
-        "name": "Revenant",
+        "name": "Overmind",
         "role": "Physical Hybrid",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RV.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/09-ADD/OM.png",
+        "paths": ["DBR", "DOM", "MP", "OM"]
       }
     }
   },
@@ -381,40 +381,40 @@
     "name": "Luciel",
     "jobs": {
       "CATA": {
-        "name": "Furious Blade",
+        "name": "Catastrophe",
         "role": "Physical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/FB.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/10-LUCIEL/CATA.png",
+        "paths": ["CATA", "INNO", "DIA", "DEM"]
       },
       "INNO": {
-        "name": "Rage Hearts",
+        "name": "Innocent",
         "role": "Magical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RH.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/10-LUCIEL/INNO.png",
+        "paths": ["CATA", "INNO", "DIA", "DEM"]
       },
       "DIA": {
-        "name": "Nova Imperator",
-        "role": "Magical DPS",
-        "desc": "placeholder",
-        "pros": "placeholder",
-        "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/NI.png",
-        "paths": ["FB", "RH", "NI", "RV"]
-      },
-      "DEM": {
-        "name": "Revenant",
+        "name": "Diangelion",
         "role": "Physical Hybrid",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RV.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/10-LUCIEL/DIA.png",
+        "paths": ["CATA", "INNO", "DIA", "DEM"]
+      },
+      "DEM": {
+        "name": "Demersio",
+        "role": "Magical Support",
+        "desc": "placeholder",
+        "pros": "placeholder",
+        "cons": "placeholder",
+        "img": "img/portraits/10-LUCIEL/DEM.png",
+        "paths": ["CATA", "INNO", "DIA", "DEM"]
       }
     }
   },
@@ -423,40 +423,40 @@
     "name": "Rose",
     "jobs": {
       "TB": {
-        "name": "Furious Blade",
+        "name": "Tempest Burster",
         "role": "Physical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/FB.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/11-ROSE/TB.png",
+        "paths": ["TB", "BLM", "MN", "PO"]
       },
       "BLM": {
-        "name": "Rage Hearts",
-        "role": "Magical DPS",
+        "name": "Black Massacre",
+        "role": "Physical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RH.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/11-ROSE/BLM.png",
+        "paths": ["TB", "BLM", "MN", "PO"]
       },
       "MN": {
-        "name": "Nova Imperator",
+        "name": "Minerva",
         "role": "Magical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/NI.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/11-ROSE/MN.png",
+        "paths": ["TB", "BLM", "MN", "PO"]
       },
       "PO": {
-        "name": "Revenant",
-        "role": "Physical Hybrid",
+        "name": "Prime Operator",
+        "role": "Magical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RV.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/11-ROSE/PO.png",
+        "paths": ["TB", "BLM", "MN", "PO"]
       }
     }
   },
@@ -465,40 +465,40 @@
     "name": "Ain",
     "jobs": {
       "RI": {
-        "name": "Furious Blade",
+        "name": "Richer",
         "role": "Physical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/FB.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/12-AIN/RI.png",
+        "paths": ["RI", "BL", "HR", "OP"]
       },
       "BL": {
-        "name": "Rage Hearts",
-        "role": "Magical DPS",
+        "name": "Bluhen",
+        "role": "Magical Support",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RH.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/12-AIN/BL.png",
+        "paths": ["RI", "BL", "HR", "OP"]
       },
       "HR": {
-        "name": "Nova Imperator",
+        "name": "Herrscher",
         "role": "Magical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/NI.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/12-AIN/HR.png",
+        "paths": ["RI", "BL", "HR", "OP"]
       },
       "OP": {
-        "name": "Revenant",
+        "name": "Opferung",
         "role": "Physical Hybrid",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RV.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/12-AIN/OP.png",
+        "paths": ["RI", "BL", "HR", "OP"]
       }
     }
   },
@@ -549,40 +549,40 @@
     "name": "Noah",
     "jobs": {
       "LIB": {
-        "name": "Furious Blade",
+        "name": "Liberator",
         "role": "Physical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/FB.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/14-NOAH/LIB.png",
+        "paths": ["LIB", "CEL", "NP", "MO"]
       },
       "CEL": {
-        "name": "Rage Hearts",
-        "role": "Magical DPS",
+        "name": "Celestia",
+        "role": "Magical Hybrid",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RH.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/14-NOAH/CEL.png",
+        "paths": ["LIB", "CEL", "NP", "MO"]
       },
       "NP": {
-        "name": "Nova Imperator",
+        "name": "Nyx Pieta",
+        "role": "Physical Support",
+        "desc": "placeholder",
+        "pros": "placeholder",
+        "cons": "placeholder",
+        "img": "img/portraits/14-NOAH/NP.png",
+        "paths": ["LIB", "CEL", "NP", "MO"]
+      },
+      "MO": {
+        "name": "Morpheus",
         "role": "Magical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/NI.png",
-        "paths": ["FB", "RH", "NI", "RV"]
-      },
-      "MO": {
-        "name": "Revenant",
-        "role": "Physical Hybrid",
-        "desc": "placeholder",
-        "pros": "placeholder",
-        "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RV.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/14-NOAH/MO.png",
+        "paths": ["LIB", "CEL", "NP", "MO"]
       }
     }
   },
@@ -591,40 +591,40 @@
     "name": "Lithia",
     "jobs": {
       "GB": {
-        "name": "Furious Blade",
+        "name": "Gembliss",
         "role": "Physical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/FB.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/15-LITHIA/GB.png",
+        "paths": ["GB", "AV", "AC", "MC"]
       },
       "AV": {
-        "name": "Rage Hearts",
-        "role": "Magical DPS",
+        "name": "Avarice",
+        "role": "Physical Support",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RH.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/15-LITHIA/AV.png",
+        "paths": ["GB", "AV", "AC", "MC"]
       },
       "AC": {
-        "name": "Nova Imperator",
+        "name": "Achlys",
+        "role": "Magical Hybrid",
+        "desc": "placeholder",
+        "pros": "placeholder",
+        "cons": "placeholder",
+        "img": "img/portraits/15-LITHIA/AC.png",
+        "paths": ["GB", "AV", "AC", "MC"]
+      },
+      "MC": {
+        "name": "Mischief",
         "role": "Magical DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/NI.png",
-        "paths": ["FB", "RH", "NI", "RV"]
-      },
-      "MC": {
-        "name": "Revenant",
-        "role": "Physical Hybrid",
-        "desc": "placeholder",
-        "pros": "placeholder",
-        "cons": "placeholder",
-        "img": "img/portraits/04-RAVEN/RV.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "img": "img/portraits/15-LITHIA/MC.png",
+        "paths": ["GB", "AV", "AC", "MC"]
       }
     }
   }
