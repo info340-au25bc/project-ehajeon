@@ -1,13 +1,95 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>project-draft</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An Elsword Beginner's Kit">
+    <meta name="author" content="Elina Jeon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>ElGuide</title>
+
+    <link rel="icon" type="image/png" href="img/icons/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- MOBILE-FIRST DESIGN -->
+
+    <!-- NAVIGATION -->
+     <div>
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Character Quiz</a></li>
+                <li><a href="buildparty.html">Party Builder</a></li>
+                <li><a href="progression.html">Progression Guide</a></li>
+            </ul>
+        </div>
+        
+        <nav>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="right-items">
+                <a class="button" href="login.html">login</a>
+                <button id="mode">light</button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- INTRO -->
+        <div id="intro">
+          <!-- Header bar, about description and banner image, quick links to each resource, side nav for said links and logging in/registering -->
+          <header>
+            <h1>ElGuide</h1>
+              <p>Elguide is a small student project about the MMO Elsword, aiming to help early and mid-game players figure out how to get the most out of the game; specifically, to make informed decisions without resorting to p2w methods or dig around Reddit/Discord for answers. Essentially, consider it as a beginner's guide!</p>
+          </header>  
+
+            <h2>Last Updated (11/9/2025)</h2>
+            <ul>
+                <li>Added all Prelim designs of pages!</li>
+            </ul>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="cards">
+            <!-- buttons here -->
+             <div class="card"> <a href="quiz.html">
+                <img src="img/ElsSD.png" alt="Small deformation Elsword">
+                <h2>Character Quiz</h2>
+             </a></div>
+
+             <div class="card"> <a href="buildparty.html">
+                <img src="img/RenaSD.png" alt="Small deformation Rena">
+                <h2>Party Builder</h2>
+             </a></div>
+
+             <div class="card"> <a href="progression.html">
+                <img src="img/PowerPunch.png" alt="Small deformation Raven and Laby in front of Power Punch">
+                <h2>Progression Checklist</h2>
+             </a> </div>
+        </div>
+
+        <div>
+            <!-- attached bottom of screen content?-->
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; All materials belong to KOG 2000 </p>
+        </div>
+    </footer>
+
+    <!-- DESKTOP DESIGN (future plans) -->
+    <!-- Similar format, carousel style for flipping through each feature page -->
+    <!-- note that the main visual difference is in the nav and buttons! -->
+
+    <script src="js/app.js"></script> 
+</body>
 </html>
