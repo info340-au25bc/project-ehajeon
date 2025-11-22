@@ -191,7 +191,7 @@ a:hover {
     right: 0;
 }
 
-.right-items a {
+.right-items a, .button {
     background-color: #212127;
     color: white;
     margin: 5px 0 0 5px;
@@ -202,6 +202,11 @@ a:hover {
 
 .right-items a:hover {
     color: #6fa2ff;
+}
+
+.button {
+    font-size: 0.9rem;
+    padding: 7px;
 }
 
 #mode {

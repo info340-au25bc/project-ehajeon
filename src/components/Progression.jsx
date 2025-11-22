@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Progression() {
+export function Progression(props) {
     return(
         <div>
             <main>
@@ -67,6 +67,7 @@ export function Progression() {
                                 </ul>
                             </div>
                         </div>
+                        
                     </div>
                 </div> 
             </main>

@@ -9,7 +9,7 @@ import BUFF_DATA from '../data/buffs.json'
 //     -> Cropped character portrait should be inserted into the slot
 // 3. Should also display the buffs/debuffs/potential healing they bring in boxed lists to the bottom (mobile) or right (desktop) containers next to the party slots. 
 
-export function BuildParty() {
+export function BuildParty(props) {
     // CONSTANTS
     const charsBase = Object.keys(CHAR_DATA);
 

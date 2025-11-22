@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function LogInRegister() {
+export function LogInRegister(props) {
     return (
     <div>
         <main>
@@ -9,26 +9,26 @@ export function LogInRegister() {
                     <h2>Log In</h2>
                     <form action="">
                         <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" />
+                        <input type="text" id="login-username" name="username" />
 
                         <label for="password">Password:</label>
-                        <input type="text" id="password" name="password" />
+                        <input type="text" id="login-password" name="password" />
 
                         <button type="submit">Login</button>
                     </form>
                 </div>
 
-                <div class="register">
+                <div className="register">
                     <h2>Register</h2>
                     <form action="">
                         <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" />
+                        <input type="text" id="register-username" name="username" />
 
                         <label for="password">Password:</label>
-                        <input type="text" id="password" name="password" />
+                        <input type="text" id="register-password" name="password" />
 
                         <label for="email">Email:</label>
-                        <input type="text" id="email" name="email" />
+                        <input type="text" id="register-email" name="email" />
 
                         <button type="submit">Register</button>
                     </form>

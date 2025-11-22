@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router';
 
-export default function Home() {
+export default function Home(props) {
     return(
         <main>
             <div id="intro">

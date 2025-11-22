@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CHAR_DATA from "../data/chars.json"
 
-
+// data --> props?
 
 function QuizResult({ data }) {
   return (

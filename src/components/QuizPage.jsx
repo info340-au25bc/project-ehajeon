@@ -39,7 +39,7 @@ export function QuizPage(props) {
                             </header>
                             <h2>Not sure who to main?</h2>
                             <p>Take the quiz here!</p>
-                            <button><a href="quiz_pages/q_one.html">START</a></button>
+                            <a href="quiz_pages/q_one.html" className="button">START</a>
                         </div>
                         <img src="img/KEBanner.png" className="banner" alt="Knight Emperor's Master Class skill cut-in"></img>
                     </div>
