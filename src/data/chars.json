@@ -19,6 +19,7 @@
         "pros": "Good clearing",
         "cons": "Very average output and minimal debuffing capability",
         "img": "img/portraits/01-ELS/RM.png",
+        "crop": "img/portraits-cropped/01-ELS/MC_RM.png",
         "paths": ["KE", "RM", "IM", "GN"]
       },
       "IM": {
@@ -28,6 +29,7 @@
         "pros": "Impressive damage output",
         "cons": "Subpar clearing",
         "img": "img/portraits/01-ELS/IM.png",
+        "crop": "img/portraits-cropped/01-ELS/MC_IM.png",
         "paths": ["KE", "RM", "IM", "GN"]
       },
       "GN": {
@@ -37,6 +39,7 @@
         "pros": "Easiest Elboy to play",
         "cons": "Generic DPS",
         "img": "img/portraits/01-ELS/GN.png",
+        "crop": "img/portraits-cropped/01-ELS/MC_GN.png",
         "paths": ["KE", "RM", "IM", "GN"]
       }
     }
@@ -52,6 +55,7 @@
         "pros": "Good rotations and damage",
         "cons": "Movement learning curve",
         "img": "img/portraits/02-AISHA/AES.png",
+        "crop": "img/portraits-cropped/02-AISHA/MC_AES.png",
         "paths": ["AES", "OZ", "MTM", "LA"]
       },
       "OZ": {
@@ -61,6 +65,7 @@
         "pros": "---",
         "cons": "Movement learning curve",
         "img": "img/portraits/02-AISHA/OZ.png",
+        "crop": "img/portraits-cropped/02-AISHA/MC_OZ.png",
         "paths": ["AES", "OZ", "MTM", "LA"]
       },
       "MTM": {
@@ -80,6 +85,7 @@
         "pros": "Good amp",
         "cons": "Movement learning curve",
         "img": "img/portraits/02-AISHA/LA.png",
+        "crop": "img/portraits-cropped/02-AISHA/MC_LA.png",
         "paths": ["AES", "OZ", "MTM", "LA"]
       }
     }
@@ -95,6 +101,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/03-RENA/AN.png",
+        "crop": "img/portraits-cropped/03-RENA/MC_AN.png",
         "paths": ["AN", "DAB", "TW", "PR"]
       },
       "DAB": {
@@ -104,6 +111,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/03-RENA/DAB.png",
+        "crop": "img/portraits-cropped/03-RENA/MC_DAB.png",
         "paths": ["AN", "DAB", "TW", "PR"]
       },
       "TW": {
@@ -113,6 +121,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/03-RENA/TW.png",
+        "crop": "img/portraits-cropped/03-RENA/MC_TW.png",
         "paths": ["AN", "DAB", "TW", "PR"]
       },
       "PR": {
@@ -122,6 +131,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/03-RENA/PR.png",
+        "crop": "img/portraits-cropped/03-RENA/MC_PR.png",
         "paths": ["AN", "DAB", "TW", "PR"]
       }
     }
@@ -137,6 +147,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/04-RAVEN/FB.png",
+        "crop": "img/portraits-cropped/04-RAVEN/MC_FB.png",
         "paths": ["FB", "RH", "NI", "RV"]
       },
       "RH": {
@@ -146,6 +157,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/04-RAVEN/RH.png",
+        "crop": "img/portraits-cropped/04-RAVEN/MC_RH.png",
         "paths": ["FB", "RH", "NI", "RV"]
       },
       "NI": {
@@ -155,6 +167,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/04-RAVEN/NI.png",
+        "crop": "img/portraits-cropped/04-RAVEN/MC_NI.png",
         "paths": ["FB", "RH", "NI", "RV"]
       },
       "RV": {
@@ -164,6 +177,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/04-RAVEN/RV.png",
+        "crop": "img/portraits-cropped/04-RAVEN/MC_RV.png",
         "paths": ["FB", "RH", "NI", "RV"]
       }
     }
@@ -179,6 +193,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/05-EVE/CU.png",
+        "crop": "img/portraits-cropped/05-EVE/MC_CU.png",
         "paths": ["CU", "CES", "CS", "CA"]
       },
       "CES": {
@@ -188,6 +203,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/05-EVE/CES.png",
+        "crop": "img/portraits-cropped/05-EVE/MC_CES.png",
         "paths": ["CU", "CES", "CS", "CA"]
       },
       "CS": {
@@ -197,6 +213,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/05-EVE/CS.png",
+        "crop": "img/portraits-cropped/05-EVE/MC_CS.png",
         "paths": ["CU", "CES", "CS", "CA"]
       },
       "CA": {
@@ -206,6 +223,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/05-EVE/CA.png",
+        "crop": "img/portraits-cropped/05-EVE/MC_CA.png",
         "paths": ["CU", "CES", "CS", "CA"]
       }
     }
@@ -221,6 +239,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/06-CHU/CC.png",
+        "crop": "img/portraits-cropped/06-CHU/MC_CC.png",
         "paths": ["CC", "FP", "CENT", "DA"]
       },
       "FP": {
@@ -230,6 +249,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/06-CHU/FP.png",
+        "crop": "img/portraits-cropped/06-CHU/MC_FP.png",
         "paths": ["CC", "FP", "CENT", "DA"]
       },
       "CENT": {
@@ -239,6 +259,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/06-CHU/CENT.png",
+        "crop": "img/portraits-cropped/06-CHU/MC_CENT.png",
         "paths": ["CC", "FP", "CENT", "DA"]
       },
       "DA": {
@@ -248,6 +269,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/06-CHU/DA.png",
+        "crop": "img/portraits-cropped/06-CHU/MC_DA.png",
         "paths": ["CC", "FP", "CENT", "DA"]
       }
     }
@@ -273,6 +295,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/07-ARA/DEVI.png",
+        "crop": "img/portraits-cropped/07-ARA/MC_DEVI.png",
         "paths": ["APS", "DEVI", "SH", "SU"]
       },
       "SH": {
@@ -282,6 +305,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/07-ARA/SH.png",
+        "crop": "img/portraits-cropped/07-ARA/MC_SH.png",
         "paths": ["APS", "DEVI", "SH", "SU"]
       },
       "SU": {
@@ -291,6 +315,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/07-ARA/SU.png",
+        "crop": "img/portraits-cropped/07-ARA/MC_SU.png",
         "paths": ["APS", "DEVI", "SH", "SU"]
       }
     }
@@ -306,6 +331,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/08-ELE/ES.png",
+        "crop": "img/portraits-cropped/08-ELE/MC_ES.png",
         "paths": ["ES", "FL", "BQ", "ADR"]
       },
       "FL": {
@@ -315,6 +341,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/08-ELE/FL.png",
+        "crop": "img/portraits-cropped/08-ELE/MC_FL.png",
         "paths": ["ES", "FL", "BQ", "ADR"]
       },
       "BQ": {
@@ -324,6 +351,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/08-ELE/BQ.png",
+        "crop": "img/portraits-cropped/08-ELE/MC_BQ.png",
         "paths": ["ES", "FL", "BQ", "ADR"]
       },
       "ADR": {
@@ -333,6 +361,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/08-ELE/ADR.png",
+        "crop": "img/portraits-cropped/08-ELE/MC_ADR.png",
         "paths": ["ES", "FL", "BQ", "ADR"]
       }
     }
@@ -348,6 +377,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/09-ADD/DBR.png",
+        "crop": "img/portraits-cropped/09-ADD/MC_DBR.png",
         "paths": ["DBR", "DOM", "MP", "OM"]
       },
       "DOM": {
@@ -357,6 +387,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/09-ADD/DOM.png",
+        "crop": "img/portraits-cropped/09-ADD/MC_DOM.png",
         "paths": ["DBR", "DOM", "MP", "OM"]
       },
       "MP": {
@@ -366,6 +397,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/09-ADD/MP.png",
+        "crop": "img/portraits-cropped/09-ADD/MC_MP.png",
         "paths": ["DBR", "DOM", "MP", "OM"]
       },
       "OM": {
@@ -391,6 +423,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/10-LUCIEL/CATA.png",
+        "crop": "img/portraits-cropped/10-LUCIEL/MC_CATA.png",
         "paths": ["CATA", "INNO", "DIA", "DEM"]
       },
       "INNO": {
@@ -400,6 +433,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/10-LUCIEL/INNO.png",
+        "crop": "img/portraits-cropped/10-LUCIEL/MC_INNO.png",
         "paths": ["CATA", "INNO", "DIA", "DEM"]
       },
       "DIA": {
@@ -409,6 +443,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/10-LUCIEL/DIA.png",
+        "crop": "img/portraits-cropped/10-LUCIEL/MC_DIA.png",
         "paths": ["CATA", "INNO", "DIA", "DEM"]
       },
       "DEM": {
@@ -418,6 +453,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/10-LUCIEL/DEM.png",
+        "crop": "img/portraits-cropped/10-LUCIEL/MC_DEM.png",
         "paths": ["CATA", "INNO", "DIA", "DEM"]
       }
     }
@@ -433,6 +469,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/11-ROSE/TB.png",
+        "crop": "img/portraits-cropped/11-ROSE/MC_TB.png",
         "paths": ["TB", "BLM", "MN", "PO"]
       },
       "BLM": {
@@ -442,6 +479,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/11-ROSE/BLM.png",
+        "crop": "img/portraits-cropped/11-ROSE/MC_BLM.png",
         "paths": ["TB", "BLM", "MN", "PO"]
       },
       "MN": {
@@ -451,6 +489,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/11-ROSE/MN.png",
+        "crop": "img/portraits-cropped/11-ROSE/MC_MN.png",
         "paths": ["TB", "BLM", "MN", "PO"]
       },
       "PO": {
@@ -460,6 +499,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/11-ROSE/PO.png",
+        "crop": "img/portraits-cropped/11-ROSE/MC_PO.png",
         "paths": ["TB", "BLM", "MN", "PO"]
       }
     }
@@ -475,6 +515,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/12-AIN/RI.png",
+        "crop": "img/portraits-cropped/12-AIN/MC_RI.png",
         "paths": ["RI", "BL", "HR", "OP"]
       },
       "BL": {
@@ -484,6 +525,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/12-AIN/BL.png",
+        "crop": "img/portraits-cropped/12-AIN/MC_BL.png",
         "paths": ["RI", "BL", "HR", "OP"]
       },
       "HR": {
@@ -493,6 +535,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/12-AIN/HR.png",
+        "crop": "img/portraits-cropped/12-AIN/MC_HR.png",
         "paths": ["RI", "BL", "HR", "OP"]
       },
       "OP": {
@@ -518,6 +561,7 @@
         "pros": "High damage ceiling",
         "cons": "Reliance on active commands can be a learning curve",
         "img": "img/portraits/13-LABY/ETW.png",
+        "crop": "img/portraits-cropped/13-LABY/MC_ETW.png",
         "paths": ["ETW", "RAS", "NL", "TP"]
       },
       "RAS": {
@@ -527,6 +571,7 @@
         "pros": "Longest freeze and great supporting capabilities, not hard to learn.",
         "cons": "Skill casting can be a bit slow",
         "img": "img/portraits/13-LABY/RAS.png",
+        "crop": "img/portraits-cropped/13-LABY/MC_RAS.png",
         "paths": ["ETW", "RAS", "NL", "TP"]
       },
       "NL": {
@@ -536,6 +581,7 @@
         "pros": "Valuable asset on the team",
         "cons": "Rotationally dependent",
         "img": "img/portraits/13-LABY/NL.png",
+        "crop": "img/portraits-cropped/13-LABY/MC_NL.png",
         "paths": ["ETW", "RAS", "NL", "TP"]
       },
       "TP": {
@@ -545,6 +591,7 @@
         "pros": "Ridiculously high damage",
         "cons": "Offers nothing else",
         "img": "img/portraits/13-LABY/TP.png",
+        "crop": "img/portraits-cropped/13-LABY/MC_TP.png",
         "paths": ["ETW", "RAS", "NL", "TP"]
       }
     }
@@ -560,6 +607,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/14-NOAH/LIB.png",
+        "crop": "img/portraits-cropped/14-NOAH/MC_LIB.png",
         "paths": ["LIB", "CEL", "NP", "MO"]
       },
       "CEL": {
@@ -569,6 +617,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/14-NOAH/CEL.png",
+        "crop": "img/portraits-cropped/14-NOAH/MC_CEL.png",
         "paths": ["LIB", "CEL", "NP", "MO"]
       },
       "NP": {
@@ -588,6 +637,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/14-NOAH/MO.png",
+        "crop": "img/portraits-cropped/14-NOAH/MC_MO.png",
         "paths": ["LIB", "CEL", "NP", "MO"]
       }
     }
@@ -603,6 +653,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/15-LITHIA/GB.png",
+        "crop": "img/portraits-cropped/15-LITHIA/MC_GB.png",
         "paths": ["GB", "AV", "AC", "MC"]
       },
       "AV": {
@@ -612,6 +663,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/15-LITHIA/AV.png",
+        "crop": "img/portraits-cropped/15-LITHIA/MC_AV.png",
         "paths": ["GB", "AV", "AC", "MC"]
       },
       "AC": {
@@ -621,6 +673,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/15-LITHIA/AC.png",
+        "crop": "img/portraits-cropped/15-LITHIA/MC_AC.png",
         "paths": ["GB", "AV", "AC", "MC"]
       },
       "MC": {
@@ -630,6 +683,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/15-LITHIA/MC.png",
+        "crop": "img/portraits-cropped/15-LITHIA/MC_MC.png",
         "paths": ["GB", "AV", "AC", "MC"]
       }
     }

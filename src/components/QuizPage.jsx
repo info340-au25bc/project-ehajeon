@@ -2,10 +2,6 @@ import React, { useState, useEffect } from 'react';
 import CHAR_DATA from "../data/chars.json"
 
 export function QuizPage(props) {
-    // basic + test
-    let chars = props.chars || [];
-    console.log(chars.Elsword.jobs.KE.name); // logs Knight Emperor
-
     // STATES
     const charsBase = Object.keys(CHAR_DATA);
     const [selectedChar, setSelectedChar] = useState(null);
@@ -80,7 +76,7 @@ function ExpandOverview({ char, activeJob, setActiveJob }) {
   const jobData = char.jobs[activeJob];
 
   return (
-    <div>
+    <>
       <div className="paths">
         <ul>
           {Object.keys(char.jobs).map((jobKey) => (
@@ -107,7 +103,7 @@ function ExpandOverview({ char, activeJob, setActiveJob }) {
         <p><strong>Pros:</strong> {jobData.pros}</p>
         <p><strong>Cons:</strong> {jobData.cons}</p>
       </div>
-    </div>
+    </>
   );
 }
 

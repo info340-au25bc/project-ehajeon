@@ -701,11 +701,11 @@ a:hover {
     .buffs {
         align-self: flex-start;
         text-align: left;
-        height: 500px;
+        height: 300px;
         width: 25%;
     }
     .buffs li {
-        margin: 15px;
+        margin: 5px;
     }
 
 }
