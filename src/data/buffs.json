@@ -1,0 +1,237 @@
+{
+    "KE": {
+        "buffs": {
+            "Iron Body": {
+                "effect": "Super Armor, 20% Damage Reduction",
+                "duration": "8.4s (Party 12s)",
+                "cooldown": "20s"
+            }
+        },
+
+        "debuffs": {
+            "Armor Break": {
+                "effect": "-30% Physical Defense",
+                "duration": "7s",
+                "cooldown": "7s"
+            },
+            "Grand Cross": {
+                "effect": "12% Physical Damage Taken",
+                "duration": "12s",
+                "cooldown": "21s"
+            }
+        }
+    },
+
+    "MTM": {
+        "buffs": {
+            "Power Aura": {
+                "effect": "20% Physical Attack (Killing Blow (I))",
+                "duration": "39s",
+                "cooldown": "10s"
+            },
+            "Space Distortion": {
+                "effect": "Reduce Cooldown of Special Actives -0.7/s",
+                "duration": "7s",
+                "cooldown": "9s"
+            }
+        },
+
+        "debuffs": {
+            "Awakened Will: Dimension Witch": {
+                "effect": "-12% Stackable Physical Defense (Max: 36%) for Special Active/staff command",
+                "duration": "5s",
+                "cooldown": "1s"
+            }
+        }
+    },
+
+    "APS": {
+        "buffs": {
+            "Tiger Power": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Fierce Tiger Strike": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            }
+        },
+
+        "debuffs": {
+            "Suppression": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Ultimate Spearmanship": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Fire Lotus": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            },
+            "Tiger Stance 4: Raging Wave": {
+                "effect": "-34% Defense at 33% chance per hit",
+                "duration": "5s",
+                "cooldown": "10s"
+            }
+        }
+    },
+
+    "OM": {
+        "buffs": {
+            "Trolley Dilemma": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Mass Examination": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            },
+            "Detoxication": {
+                "effect": "aaaa"
+            },
+            "Stimpack": {
+                "effect": "aaa"
+            },
+            "PCA": {
+                "effect": "aaa"
+            },
+            "Immunity": {
+                "effect": "aaa"
+            }
+        },
+
+        "debuffs": {
+            "False Diagnosis": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Anesthesia": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Examination": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            }
+        },
+
+        "healing": {
+            "Cure": {
+                "effect": "aaaa",
+                "duration": "20s",
+                "cooldown": "19s"
+            }
+        }
+    },
+
+    "OP": {
+        "buffs": {
+            "Segen": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Vorgehen": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            },
+            "Wegnahme": {
+                "effect": "aaaa"
+            },
+            "Andacht": {
+                "effect": "aaaa"
+            }
+        },
+
+        "debuffs": {
+            "Segen": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Heimsuchen": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Bardiet": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            },
+            "Bohren Vereisen": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            }
+        }
+    },
+
+    "NP": {
+        "buffs": {
+            "Benediction Stage 1": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Storming Sea": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            },
+            "Verdict": {
+                "effect": "aaaa"
+            },
+            "Silver Moon's Calling": {
+                "effect": "aaa"
+            },
+            "Salvation": {
+                "effect": "aaa"
+            },
+            "Chilling Rage": {
+                "effect": "aaa"
+            },
+            "White Dwarf": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            }
+        },
+
+        "debuffs": {
+            "Extinction": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Glacier": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "High Tide": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            },
+            "Moon Shard": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            }
+        },
+
+        "healing": {
+            "Moon's Origin": {
+                "effect": "aaaa",
+                "duration": "20s",
+                "cooldown": "19s"
+            }
+        }
+    }
+}

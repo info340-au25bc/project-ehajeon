@@ -9,6 +9,7 @@
         "pros": "Great bossing and clearing with good utility tools",
         "cons": "Slow casting, limited movement",
         "img": "img/portraits/01-ELS/KE.png",
+        "crop": "img/portraits-cropped/01-ELS/MC_KE.png",
         "paths": ["KE", "RM", "IM", "GN"]
       },
       "RM": {
@@ -69,6 +70,7 @@
         "pros": "Great amp",
         "cons": "Movement learning curve",
         "img": "img/portraits/02-AISHA/MTM.png",
+        "crop": "img/portraits-cropped/02-AISHA/MC_MTM.png",
         "paths": ["AES", "OZ", "MTM", "LA"]
       },
       "LA": {
@@ -261,6 +263,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/07-ARA/APS.png",
+        "crop": "img/portraits-cropped/07-ARA/MC_APS.png",
         "paths": ["APS", "DEVI", "SH", "SU"]
       },
       "DEVI": {
@@ -372,6 +375,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/09-ADD/OM.png",
+        "crop": "img/portraits-cropped/09-ADD/MC_OM.png",
         "paths": ["DBR", "DOM", "MP", "OM"]
       }
     }
@@ -498,6 +502,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/12-AIN/OP.png",
+        "crop": "img/portraits-cropped/12-AIN/MC_OP.png",
         "paths": ["RI", "BL", "HR", "OP"]
       }
     }
@@ -573,6 +578,7 @@
         "pros": "placeholder",
         "cons": "placeholder",
         "img": "img/portraits/14-NOAH/NP.png",
+        "crop": "img/portraits-cropped/14-NOAH/MC_NP.png",
         "paths": ["LIB", "CEL", "NP", "MO"]
       },
       "MO": {

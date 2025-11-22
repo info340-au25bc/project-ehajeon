@@ -258,22 +258,17 @@ a:hover {
     z-index: 1;
 }
 
-.base {
+.base, .job {
     filter: grayscale(70%);
 }
 
-.base:hover {
+.base:hover, .job:hover {
     filter: none;
     transition: 0.2s ease;
 }
 
-.job {
-    filter: grayscale(70%);   
-}
-
-.job:hover {
-    filter: none;
-    transition: 0.2s ease;
+.grayed-out {
+    opacity: 0.4;
 }
 
 .job.active {
@@ -455,24 +450,35 @@ a:hover {
     border-radius: 10px;
 }
 
-.buffs {
+.char-slots img {
     width: 100%;
-    max-width: 400px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.buffs {
+    max-width: 800px;
+    height: 300px;
     align-self: center;
     text-align: center;
-    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
 }
 
 .buffs ul {
+    display: flex;
+    flex-wrap: wrap;;
     justify-content: center;
+    gap: 10px;
 }
 
 .buffs li {
     display: inline-block;
+    font-size: 0.9rem;
     text-align: left;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
-    width: 300px;
+    width: 200px;
     border: rgba(255, 255, 255, 0.365) solid 1px;
     border-radius: 10px;
     background-color: #3b3a3a;
@@ -690,6 +696,7 @@ a:hover {
     .buffs {
         align-self: flex-start;
         text-align: left;
+        height: 500px;
         width: 25%;
     }
     .buffs li {

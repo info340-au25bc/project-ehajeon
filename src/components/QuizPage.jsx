@@ -12,8 +12,8 @@ export function QuizPage(props) {
     const [activeJob, setActiveJob] = useState(null);
 
     // HELPER
-    function handleSelect(key) {
-        const char = CHAR_DATA[key];
+    function handleSelect(base) {
+        const char = CHAR_DATA[base];
         const defaultJob = Object.keys(char.jobs)[0];
         const data = char.jobs[defaultJob];
 
@@ -74,8 +74,10 @@ export function QuizPage(props) {
     );
 }
 
+// SEPARATE FUNCTIONS
+
 function ExpandOverview({ char, activeJob, setActiveJob }) {
-  const data = char.jobs[activeJob];
+  const jobData = char.jobs[activeJob];
 
   return (
     <div>
@@ -95,18 +97,18 @@ function ExpandOverview({ char, activeJob, setActiveJob }) {
       </div>
 
       <div>
-        <img src={data.img} className="portrait" alt={data.name} />
+        <img src={jobData.img} className="portrait" alt={jobData.name} />
       </div>
 
       <div className="char-info">
-        <h3>{data.name}</h3>
-        <h4>{data.role}</h4>
-        <p>{data.desc}</p>
-        <p><strong>Pros:</strong> {data.pros}</p>
-        <p><strong>Cons:</strong> {data.cons}</p>
+        <h3>{jobData.name}</h3>
+        <h4>{jobData.role}</h4>
+        <p>{jobData.desc}</p>
+        <p><strong>Pros:</strong> {jobData.pros}</p>
+        <p><strong>Cons:</strong> {jobData.cons}</p>
       </div>
     </div>
   );
 }
 
-// <expandOverview data={selectedChar} />
+// <expandOverview jobData={selectedChar} />
