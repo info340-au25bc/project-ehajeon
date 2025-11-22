@@ -19,21 +19,21 @@ export default function Home(props) {
             <div className="cards">
                 <div className="card">
                     <Link to="/quiz">
-                        <img src="img/ElsSD.png" alt="Small deformation Elsword"></img>
+                        <img src="/img/ElsSD.png" alt="Small deformation Elsword"></img>
                         <h2>Character Quiz</h2>
                     </Link>
                 </div>
 
                 <div className="card">
                     <Link to="/buildparty">
-                        <img src="img/RenaSD.png" alt="Small deformation Rena"></img>
+                        <img src="/img/RenaSD.png" alt="Small deformation Rena"></img>
                         <h2>Party Builder</h2>
                     </Link>
                 </div>
 
                 <div className="card">
                     <Link to="/progression">
-                        <img src="img/PowerPunch.png" alt="Small deformation Raven and Laby in front of Power Punch"></img>
+                        <img src="/img/PowerPunch.png" alt="Small deformation Raven and Laby in front of Power Punch"></img>
                         <h2>Progression Checklist</h2>
                     </Link>
                 </div>
