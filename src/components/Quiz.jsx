@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ExpandOverview } from './QuizPage';
 import { Link } from 'react-router';
-// import { getAuth } from "firebase/auth";
-// import { getDatabase, ref } from 'firebase/database';
 
 import CHAR_DATA from "../data/chars.json";
 import Q_DATA from "../data/quiz.json";
-
-// const db = getDatabase();
-
-// QUESTIONS
 
 export function Quiz(props) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -49,7 +43,7 @@ export function Quiz(props) {
   );
 }
 
-// SCORING ANSWERS
+// SCORE ANSWERS
 
 function scoreAnswers(userAnswers) {
   let answerPool = [];
@@ -106,7 +100,7 @@ function scoreAnswers(userAnswers) {
 
   answerPool.sort((a, b) => b._score - a._score);
 
-  // can check ranking and scores through console!
+  // can check ranking and scores through console here!
   console.log("Top scored jobs:", answerPool.map(job => ({ name: job.name, score: job._score })));
 
   return answerPool.slice(0, 5);
@@ -125,18 +119,10 @@ export function QuizResult({ results }) {
   function handleSelect(base) {
     const char = CHAR_DATA[base];
     const defaultJob = Object.keys(char.jobs)[0];
+    
     setSelectedChar(char);
     setActiveJob(defaultJob);
   }
-
-  // const auth = getAuth();
-  // const user = auth.currentUser;
-
-  // useEffect(() => {
-  //   if (user && results.length > 0) {
-  //     saveQuizResult(user.uid, results);
-  //   }
-  // }, [user, results]);
   
   return (
     <div>
@@ -201,19 +187,3 @@ export function QuizResult({ results }) {
     </div>
   )
 }
-
-// SAVE RESULTS
-
-// async function saveQuizResult(userId, quizResults) {
-//   try {
-//     const userRef = doc(db, "users", userId);
-//     await updateDoc(userRef, {
-//       quizResults: arrayUnion({
-//         date: new Date(),
-//         results: quizResults
-//       })
-//     });
-//   } catch (error) {
-//     console.error("Error saving quiz result:", error);
-//   }
-// }

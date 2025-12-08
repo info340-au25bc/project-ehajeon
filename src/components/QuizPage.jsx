@@ -1,29 +1,50 @@
 import React, { useState, useEffect } from 'react';
 import CHAR_DATA from "../data/chars.json"
-import { Link } from 'react-router';
+import { Link, useNavigate, useParams } from 'react-router';
 
 export function QuizPage(props) {
-    // STATES
-    const charsBase = Object.keys(CHAR_DATA);
-    const [selectedChar, setSelectedChar] = useState(null);
-    const [activeJob, setActiveJob] = useState(null);
+  const { base, job } = useParams();
+  const navigate = useNavigate();  
+  const charsBase = Object.keys(CHAR_DATA);
 
-    // HELPER
-    function handleSelect(base) {
-        const char = CHAR_DATA[base];
-        const defaultJob = Object.keys(char.jobs)[0];
-        const data = char.jobs[defaultJob];
+  // STATES
+  const [selectedChar, setSelectedChar] = useState(null);
+  const [activeJob, setActiveJob] = useState(null);
 
-        setSelectedChar(char);
-        setActiveJob(defaultJob);
+  // HELPERS
+  function handleSelect(base) {
+      const char = CHAR_DATA[base];
+      const defaultJob = Object.keys(char.jobs)[0];
+
+      setSelectedChar(char);
+      setActiveJob(defaultJob);
+      navigate("/quiz/" + base + "/" + defaultJob, { replace: true });
+  }
+
+  function handleJobSelect(job) {
+    setActiveJob(job);
+
+    if (selectedChar) {
+      navigate("/quiz/" + selectedChar.name + "/" + job, { replace: true });
     }
+  }
 
-    useEffect(() => {
-      if (selectedChar) {
-        const overviewDiv = document.getElementById("overview");
-        overviewDiv?.scrollIntoView({ behavior: "smooth" });
+  useEffect(() => {
+    if (base) {
+      const char = CHAR_DATA[base];
+      if (char) {
+        setSelectedChar(char);
+        setActiveJob(job || Object.keys(char.jobs)[0]);
       }
-    }, [selectedChar]);
+    }
+  }, [base, job]);
+
+  useEffect(() => {
+    if (selectedChar) {
+      const overviewDiv = document.getElementById("overview");
+      overviewDiv?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [selectedChar]);
 
     return (
         <div>
@@ -38,7 +59,7 @@ export function QuizPage(props) {
                             <p>Take the quiz here!</p>
                             <Link to="/questions" className="button">START</Link>
                         </div>
-                        <img src="img/KEBanner.png" className="banner" alt="Knight Emperor's Master Class skill cut-in"></img>
+                        <img src="/img/KEBanner.png" className="banner" alt="Knight Emperor's Master Class skill cut-in"></img>
                     </div>
                 </div>
 
@@ -48,8 +69,8 @@ export function QuizPage(props) {
                     {charsBase.map((c) => (
                         <img
                             key={c}
-                            src={`img/icons/${c}.png`}
-                            alt={`Base ${c}`}
+                            src={"/img/icons/" + c + ".png"}
+                            alt={"Base " + c}
                             className="base"
                             onClick={() => handleSelect(c)}
                         />
@@ -63,7 +84,7 @@ export function QuizPage(props) {
                         <ExpandOverview
                             char={selectedChar}
                             activeJob={activeJob}
-                            setActiveJob={setActiveJob} />
+                            setActiveJob={handleJobSelect} />
                     )}
                 </div>
             </main>
@@ -83,9 +104,9 @@ export function ExpandOverview({ char, activeJob, setActiveJob }) {
           {Object.keys(char.jobs).map((jobKey) => (
             <li key={jobKey}>
               <img
-                src={`img/icons/${jobKey}.png`}
+                src={"/img/icons/" + jobKey + ".png"}
                 alt={jobKey}
-                className={`job ${activeJob === jobKey ? "active" : ""}`}
+                className={"job  " + (activeJob === jobKey ? "active" : "")}
                 onClick={() => setActiveJob(jobKey)} // update active job
               />
             </li>
@@ -94,7 +115,7 @@ export function ExpandOverview({ char, activeJob, setActiveJob }) {
       </div>
 
       <div>
-        <img src={jobData.img} className="portrait" alt={jobData.name} />
+        <img src={"/" + jobData.img} className="portrait" alt={jobData.name} />
       </div>
 
       <div className="char-info">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Navigate, Link } from 'react-router';
+import { Routes, Route } from 'react-router';
 
 import Home from './Home';
 import { QuizPage } from './QuizPage.jsx';
@@ -13,8 +13,6 @@ import CHAR_DATA from '../data/chars.json';
 
 
 function App(props) {
-    const chars = CHAR_DATA
-    
     return (
     <>
         <div>
@@ -23,8 +21,8 @@ function App(props) {
 
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="quiz" element={<QuizPage chars={chars} />} />
-                <Route path="questions" element={<Quiz />} />
+            <Route path="quiz/*" element={<QuizPage chars={CHAR_DATA} />} />
+            <Route path="questions" element={<Quiz />} />
             <Route path="buildparty" element={<BuildParty />} />
             <Route path="progression" element={<Progression />} />
             <Route path="login" element={<LogInRegister />} />

@@ -22,6 +22,141 @@
         }
     },
 
+    "RM": {
+        "buffs": {
+            "Phoenix Talon": {
+                "effect": "20% Move/Jump Speed and 3MP/s",
+                "duration": "21s",
+                "cooldown": "20s"
+            }
+        },
+
+        "debuffs": {
+            "Rune Field": {
+                "effect": "15% Magical Damage Increase, 10% against enemies with Rune Stigma",
+                "duration": "10s",
+                "cooldown": "15s"
+            },
+            "Enchant Breaker": {
+                "effect": "-80 Elemental Resistance",
+                "duration": "5s",
+                "cooldown": "6s"
+            },
+            "[Mod] Luna Blade": {
+                "effect": "-80 Elemental Resistance, -50% All Speed",
+                "duration": "7s",
+                "cooldown": "15s"
+            },
+            "Magic Chain": {
+                "effect": "-20% Magical Defense at 50% chance on hit",
+                "duration": "10s",
+                "cooldown": null
+            },
+            "Mana Flow": {
+                "effect": "-30 Elemental Resistance on Sword Skills hit",
+                "duration": "10s",
+                "cooldown": "3s"
+            }
+        }
+    },
+
+    "IM": {
+        "buffs": {
+            "Infinity Chaser": {
+                "effect": "1.3x Cooldown Acceleration, 30% Movement Speed",
+                "duration": "10s",
+                "cooldown": "6s"
+            }
+        },
+
+        "debuffs": {
+            "Master of Combat": {
+                "effect": "22% Physical Damage Taken on Conwell Skill hit",
+                "duration": "10s",
+                "cooldown": null
+            }
+        }
+    },
+
+    "GN": {
+        "buffs": {
+            "Awakened Will: Sacred Templar [Fate]": {
+                "effect": "8% Damage Taken Decrease upon casting Bravery Vitality Skills",
+                "duration": "10s",
+                "cooldown": null
+            }
+        },
+
+        "debuffs": {
+            "Thirst [Fate]": {
+                "effect": "-20% Magical Defense upon casting Strength Destruction Skills",
+                "duration": "20s",
+                "cooldown": null
+            },
+            "Divine Lift": {
+                "effect": "16% Magical Damage Taken",
+                "duration": "10s",
+                "cooldown": "22s"
+            },
+            "Dominion": {
+                "effect": "-130 Elemental Resistance",
+                "duration": "10s",
+                "cooldown": "10s"
+            }
+        }
+    },
+
+    "AES": {
+        "buffs": {
+            "Wisdom Aura": {
+                "effect": "25% Magical Attack",
+                "duration": "39s",
+                "cooldown": "10s"
+            }
+        },
+
+        "debuffs": {
+            "Blizzard Shower [Awakened]": {
+                "effect": "Freeze enemy",
+                "duration": "6.5s",
+                "cooldown": null
+            }
+        }
+    },
+
+    "OZ": {
+        "buffs": {
+            "Acceleration Aura": {
+                "effect": "15% Phys/Mag Attack, 10% Action/Move/Jump Speed",
+                "duration": "39s",
+                "cooldown": "10s"
+            },
+            "Dark Web": {
+                "effect": "10% MP/s",
+                "duration": "3s",
+                "cooldown": "14s"
+            }
+        },
+
+        "debuffs": {
+            "Phantom Breath": {
+                "effect": "-195 Elemental Resistance",
+                "duration": "9s",
+                "cooldown": "12s"
+            },
+            "Petit Angkor": {
+                "effect": "-30% Magical Defense",
+                "duration": "5s",
+                "cooldown": "5s"
+            },
+            "Aging": {
+                "effect": "-20% Attack Power, -40% Move/Action Speed, -100% Additional Damage",
+                "duration": "20s",
+                "cooldown": "22s"
+            }
+        }
+    },
+
     "MTM": {
         "buffs": {
             "Power Aura": {
@@ -41,6 +176,561 @@
                 "effect": "-12% Stackable Physical Defense (Max: 36%) for Special Active/staff command",
                 "duration": "5s",
                 "cooldown": "1s"
+            }
+        }
+    },
+
+    "LA": {
+        "buffs": {
+            "Philosopher's Stone [Arche]": {
+                "effect": "10% Phys/Mag Attack, Consumable CD reduced to 15s",
+                "duration": "15s, 8s",
+                "cooldown": null
+            },
+            "Mystic Flask": {
+                "effect": "Spawns random colored flask to be picked up by allies. Effects vary.",
+                "duration": "30s",
+                "cooldown": null
+            },
+            "Envelopes": {
+                "effect": "20% Damage Reduction inside field",
+                "duration": "10s",
+                "cooldown": "15s"
+            },
+            "Arche": {
+                "effect": "Various effect based on maxed Aer/Mater/Merus gauges",
+                "duration": "15s",
+                "cooldown": null
+            },
+            "Supplement Aura": {
+                "effect": "Ally Max HP 15%, MP + 50",
+                "duration": "30s",
+                "cooldown": "10s"
+            },
+            "Enough Mineral": {
+                "effect": "20% Movement/Jump Speed within skill range",
+                "duration": "5s",
+                "cooldown": null
+            },
+            "Apeiron": {
+                "effect": "Prevents death and summons Apeiron's Realm, healing 20% HP/MP/s",
+                "duration": "5s",
+                "cooldown": "120s"
+            }
+        },
+
+        "debuffs": {
+            "Compatibility": {
+                "effect": "10% Increased Damage to Enemies with Poison",
+                "duration": "15s",
+                "cooldown": null
+            },
+            "Refined": {
+                "effect": "-20% Phys/Mag Defense",
+                "duration": "25s",
+                "cooldown": "8s"
+            }
+        }
+    },
+
+    "AN": {
+        "buffs": {
+            "Airelinna": {
+                "effect": "20% Physical Attack, 5% MP/s, 15% All Speed",
+                "duration": "45s",
+                "cooldown": "30s"
+            },
+            "Perfect Storm": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            }
+        },
+
+        "debuffs": {
+            "Back Kick": {
+                "effect": "-26% Phys/Mag Defense",
+                "duration": "10s",
+                "cooldown": "5s"
+            }
+        }
+    },
+
+    "DAB": {
+        "buffs": {
+            "Perfect Storm": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            }
+        },
+
+        "debuffs": {
+            "Stigma Shot": {
+                "effect": "5% Magical Damage Taken, 15% Critical Damage Taken",
+                "duration": "10s",
+                "cooldown": "8s"
+            },
+            "Remaining Stigma": {
+                "effect": "10% Magical Damage Taken, 15% Critical Damage Take when using Arrow Skills 3 times",
+                "duration": "20s",
+                "cooldown": "3s"
+            },
+            "Freezing Arrow [Awakened]": {
+                "effect": "Freeze enemy",
+                "duration": "6.5s",
+                "cooldown": null
+            }
+        }
+    },
+
+    "TW": {
+        "buffs": {
+            "Evoke": {
+                "effect": "20% Damage Reduction",
+                "duration": "6s",
+                "cooldown": "14s"
+            },
+            "Perfect Storm": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            }
+        },
+
+        "debuffs": {
+            "Trapping Arrow - Fungus": {
+                "effect": "15% Physical Damage Taken",
+                "duration": "10s",
+                "cooldown": "15s"
+            },
+            "Evoke": {
+                "effect": "-30% Physical Defense",
+                "duration": "20s",
+                "cooldown": "14s"
+            }
+        }
+    },
+
+    "PR": {
+        "buffs": {
+            "Song of Courage": {
+                "effect": "20% Damage Reduction",
+                "duration": "6s",
+                "cooldown": "14s"
+            },
+            "Echo": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            },
+            "Literacy": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            },
+            "Awakened Will: Tale Spinner": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            },
+            "Listen": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            },
+            "Fickle Blessing": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            },
+            "Tuning": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            },
+            "Emphasis": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            },
+            "Sincerely": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            },
+            "Pour Down": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            },
+            "Perfect Storm": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            }
+        },
+
+        "debuffs": {
+            "Echo": {
+                "effect": "15% Physical Damage Taken",
+                "duration": "10s",
+                "cooldown": "15s"
+            }
+        }
+    },
+
+    "FB": {
+        "debuffs": {
+            "Winning Strategy": {
+                "effect": "15% Physical Damage Taken when hitting with Bravery skills",
+                "duration": "10s",
+                "cooldown": null
+            },
+            "Armor Crash": {
+                "effect": "-32.5% Physical Defense",
+                "duration": "7s",
+                "cooldown": "4s"
+            }
+        }
+    },
+
+    "RH": {
+        "debuffs": {
+            "Nuclear": {
+                "effect": "18% Critical Damage Taken, -25% Magical Defense, -150 Elemental Resistance in clouds",
+                "duration": "10s",
+                "cooldown": "23s"
+            },
+            "Weapon Crash": {
+                "effect": "-15% Attack Power",
+                "duration": "7s",
+                "cooldown": "4s"
+            }
+        }
+    },
+
+    "NI": {
+        "buffs": {
+            "Master of Warfare": {
+                "effect": "100MP recovery when [Heat Detection] is at 5 stacks",
+                "duration": null,
+                "cooldown": null
+            },
+            "Mercenary Survival Strategy": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            }
+        },
+
+        "debuffs": {
+            "Ignition Crow - Napalm/Incinerator": {
+                "effect": "12% Magical Damage Taken",
+                "duration": "15s",
+                "cooldown": "15s"
+            },
+            "Ifrit Flame": {
+                "effect": "-15% Defense, -150 Elemental Resistance",
+                "duration": "10s",
+                "cooldown": "22s"
+            }
+        }
+    },
+
+    "RV": {
+        "buffs": {
+            "Catacomb": {
+                "effect": "20% Damage Reduction",
+                "duration": "6s",
+                "cooldown": "14s"
+            },
+            "Death Scream": {
+                "effect": "5% HP/MP/s in skill range",
+                "duration": "3s",
+                "cooldown": "9s"
+            },
+            "Obliteration": {
+                "effect": "-30% Physical Defense",
+                "duration": "20s",
+                "cooldown": "14s"
+            }
+        },
+
+        "debuffs": {
+            "Valasia": {
+                "effect": "15% Physical Damage Taken",
+                "duration": "10s",
+                "cooldown": "15s"
+            },
+            "Soul Crash": {
+                "effect": "-30% Physical Defense",
+                "duration": "20s",
+                "cooldown": "14s"
+            },
+            "Sprout": {
+                "effect": "-30% Physical Defense",
+                "duration": "20s",
+                "cooldown": "14s"
+            },
+            "Awakened Will: Mutant Reaper": {
+                "effect": "-30% Physical Defense",
+                "duration": "20s",
+                "cooldown": "14s"
+            },
+            "Saprophyte": {
+                "effect": "-30% Physical Defense",
+                "duration": "20s",
+                "cooldown": "14s"
+            },
+            "Interdiction": {
+                "effect": "-30% Physical Defense",
+                "duration": "20s",
+                "cooldown": "14s"
+            }
+        }
+    },
+
+    "CU": {
+        "buffs": {
+            "Atomic Shield": {
+                "effect": "100MP recovery when [Heat Detection] is at 5 stacks",
+                "duration": null,
+                "cooldown": null
+            }
+        },
+
+        "debuffs": {
+            "Concentration Aura": {
+                "effect": "12% Magical Damage Taken",
+                "duration": "15s",
+                "cooldown": "15s"
+            },
+            "Cheat Code: Destruction": {
+                "effect": "-15% Defense, -150 Elemental Resistance",
+                "duration": "10s",
+                "cooldown": "22s"
+            }
+        }
+    },
+
+    "CES": {
+        "buffs": {
+            "Cheat Code: Rule Breaker": {
+                "effect": "100MP recovery when [Heat Detection] is at 5 stacks",
+                "duration": null,
+                "cooldown": null
+            },
+            "Oberon Guard": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            }
+        },
+
+        "debuffs": {
+            "Queen's Blessing": {
+                "effect": "12% Magical Damage Taken",
+                "duration": "15s",
+                "cooldown": "15s"
+            },
+            "Riseon Pride": {
+                "effect": "-15% Defense, -150 Elemental Resistance",
+                "duration": "10s",
+                "cooldown": "22s"
+            }
+        }
+    },
+
+    "CS": {
+        "debuffs": {
+            "Evolution": {
+                "effect": "12% Magical Damage Taken",
+                "duration": "15s",
+                "cooldown": "15s"
+            },
+            "Extreme Virtual": {
+                "effect": "-15% Defense, -150 Elemental Resistance",
+                "duration": "10s",
+                "cooldown": "22s"
+            },
+            "Electronic Fall": {
+                "effect": "-15% Defense, -150 Elemental Resistance",
+                "duration": "10s",
+                "cooldown": "22s"
+            }
+        }
+    },
+
+    "CA": {
+        "buffs": {
+            "Masquerade": {
+                "effect": "100MP recovery when [Heat Detection] is at 5 stacks",
+                "duration": null,
+                "cooldown": null
+            },
+            "Purify": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            },
+            "White Box": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            },
+            "Friday": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            }
+        },
+
+        "debuffs": {
+            "Awakened Will: Code Failess": {
+                "effect": "12% Magical Damage Taken",
+                "duration": "15s",
+                "cooldown": "15s"
+            }
+        }
+    },
+
+    "CC": {
+        "buffs": {
+            "Rapid Guardian": {
+                "effect": "100MP recovery when [Heat Detection] is at 5 stacks",
+                "duration": null,
+                "cooldown": null
+            },
+            "Wonder Wall": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            }
+        },
+
+        "debuffs": {
+            "Iron Howling": {
+                "effect": "12% Magical Damage Taken",
+                "duration": "15s",
+                "cooldown": "15s"
+            },
+            "Mountain Blast": {
+                "effect": "12% Magical Damage Taken",
+                "duration": "15s",
+                "cooldown": "15s"
+            },
+            "Pandemonium": {
+                "effect": "12% Magical Damage Taken",
+                "duration": "15s",
+                "cooldown": "15s"
+            },
+            "Guardian Force": {
+                "effect": "12% Magical Damage Taken",
+                "duration": "15s",
+                "cooldown": "15s"
+            },
+            "Crusader's Armor": {
+                "effect": "12% Magical Damage Taken",
+                "duration": "15s",
+                "cooldown": "15s"
+            }
+
+        }
+    },
+
+    "FP": {
+        "buffs": {
+            "Sharpshooter Syndrome": {
+                "effect": "100MP recovery when [Heat Detection] is at 5 stacks",
+                "duration": null,
+                "cooldown": null
+            }
+        }
+    },
+
+    "CENT": {
+        "buffs": {
+            "Tactical Field": {
+                "effect": "100MP recovery when [Heat Detection] is at 5 stacks",
+                "duration": null,
+                "cooldown": null
+            }
+        },
+
+        "debuffs": {
+            "Fatal Cannon": {
+                "effect": "12% Magical Damage Taken",
+                "duration": "15s",
+                "cooldown": "15s"
+            },
+            "Heavy Field": {
+                "effect": "-15% Defense, -150 Elemental Resistance",
+                "duration": "10s",
+                "cooldown": "22s"
+            }
+        }
+    },
+
+    "DA": {
+        "buffs": {
+            "Pioneer's Prayer": {
+                "effect": "100MP recovery when [Heat Detection] is at 5 stacks",
+                "duration": null,
+                "cooldown": null
+            },
+            "Pioneer's Dignity": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            },
+            "Holy Declaration": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            },
+            "Holy Grail": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            },
+            "Feather Crest": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            },
+            "Brave Cover": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            },
+            "Dius Aer (Stage 3)": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            },
+            "Philantropy": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            },
+            "Bonus Opera": {
+                "effect": "12% Phys/Mag Attack and Defense",
+                "duration": "15s",
+                "cooldown": "10s"
+            }
+        },
+
+        "debuffs": {
+            "Atonement": {
+                "effect": "12% Magical Damage Taken",
+                "duration": "15s",
+                "cooldown": "15s"
+            },
+            "Glory Legacy": {
+                "effect": "-15% Defense, -150 Elemental Resistance",
+                "duration": "10s",
+                "cooldown": "22s"
             }
         }
     },
@@ -77,6 +767,276 @@
                 "effect": "-34% Defense at 33% chance per hit",
                 "duration": "5s",
                 "cooldown": "10s"
+            }
+        }
+    },
+
+    "DEVI": {
+        "debuffs": {
+            "Suppression: Energy": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Chi Release": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Dance of the Butterfly": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            }
+        }
+    },
+
+    "SH": {
+        "buffs": {
+            "Spell: Necromancy": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Soul Orbs": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            }
+        },
+
+        "debuffs": {
+            "Mana Release": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Suppression: Specter": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Fox Spirit": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            }
+        }
+    },
+
+    "SU": {
+        "buffs": {
+            "Wishing Star": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Joining": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            },
+            "Phoenix Wings": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            },
+            "Turtle Stance 4: Barrier": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            },
+            "Convert": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            },
+            "Fox Shadow": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            },
+            "Thickening": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            }
+        },
+
+        "debuffs": {
+            "Suppression: Pummel": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Howling Fox": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Glacial Breath": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            }
+        }
+    },
+
+    "ES": {
+        "buffs": {
+            "War Prelude": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "The Knight Captain": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            }
+        },
+
+        "debuffs": {
+            "Provoke": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Giga Blast": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Power Break": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            },
+            "Charge!": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            }
+        }
+    },
+
+    "FL": {
+        "debuffs": {
+            "Mistress of Inferno": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Fire Stigma": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            }
+        }
+    },
+
+    "BQ": {
+        "debuffs": {
+            "Blood Thirst": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Blood Falls": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Injection Stigma": {
+                "effect": "-150 Elemental Resistance",
+                "duration": "20s",
+                "cooldown": "19s"
+            }
+        }
+    },
+
+    "ADR": {
+        "buffs": {
+            "Awareness": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Path Breaker": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            },
+            "Unbroken Belief": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            },
+            "Upside Down": {
+                "effect": "10% Damage to non-Mid Boss/Boss enemies, 10% Physical Attack/Action Speed",
+                "duration": "30s",
+                "cooldown": "14s"
+            }
+        },
+
+        "debuffs": {
+            "Outburst": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Elimination": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            }
+        }
+    },
+
+    "DBR": {
+        "buffs": {
+            "Psychic Storm": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "EMP Shock": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            }
+        }
+    },
+
+    "DOM": {
+        "buffs": {
+            "Force Field": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Install - Zero Kelvin-Generator": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Install - Drone Activator": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            }
+        }
+    },
+
+    "MP": {
+        "buffs": {
+            "Seal of Time": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Mind Break": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Moonlight Rhapsody": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
             }
         }
     },
@@ -132,6 +1092,287 @@
         }
     },
 
+    "CATA": {
+        "buffs": {
+            "Power of Oriax": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Oblivion": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Supreme Punishment": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Creeping Terror": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            }
+        }
+    },
+
+    "INNO": {
+        "buffs": {
+            "Innocent Duet": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Shadow Bolt": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Shadow": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            }
+        }
+    },
+
+    "DIA": {
+        "debuffs": {
+            "Altar of Evil: Mortal Fear": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Altar of Evil: Dark Plasma": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Altar of Evil: Thorns of Hell": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Abyss Sniper": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            }
+        }
+    },
+
+    "DEM": {
+        "buffs": {
+            "Amorphous": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Heartless ID": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Blanket Authority": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Abyss Scatter": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Eternal Demersio": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Amorphous": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Infernal Hands": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Heartless ID": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Ruthless Spear": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        }
+    },
+
+    "TB": {
+        "buffs": {
+            "Awakened Will: Storm Trooper": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Enhanced Heavy Weaponry": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "[Mod] FM-92 MK2 Lancer SW": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Eagle's Radar": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            }
+        }
+    },
+
+    "BLM": {
+        "debuffs": {
+            "Frenzy": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Swift Assassin": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Saw Blade": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Kill Point": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            }
+        }
+    },
+
+    "MN": {
+        "buffs": {
+            "Einherjar": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Enhanced Grenades": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "[Mod] Phantom Shot": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            }
+        }
+    },
+
+    "PO": {
+        "buffs": {
+            "Magnetic Guard": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Armored Tempest": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Mecha Control": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "[Mod] G-1 Corona": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            }
+        }
+    },
+
+    "RI": {
+        "buffs": {
+            "Autosuggestion": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        }
+    },
+
+    "BL": {
+        "buffs": {
+            "Vertrauen Melodie": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Windhose": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Blatt Blume": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Shining Presence": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "[Mod] Requiem - Wille": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Satz Aurora - Wille": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Bohren Vereisen": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Wind Einfallen": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Edel Lied - Wille": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        }
+    },
+
+    "HR": {
+        "buffs": {
+            "Chaos Barrier": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Chaos Barrier": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Geist Herrschaft": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            }
+        }
+    },
+
     "OP": {
         "buffs": {
             "Segen": {
@@ -165,11 +1406,165 @@
                 "effect": "-150 Elemental Resistance",
                 "duration": "20s",
                 "cooldown": "19s"
+            }
+        }
+    },
+
+    "ETW": {
+        "debuffs": {
+            "Nisha is Pocket": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
             },
-            "Bohren Vereisen": {
-                "effect": "-150 Elemental Resistance",
-                "duration": "20s",
-                "cooldown": "19s"
+            "Awakened Will: Rumble Pumn": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Butterfly Balm": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        }
+    },
+
+    "RAS": {
+        "buffs": {
+            "Hello, Laby": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Sunshower": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Reflection": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "It's Windy": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Rolly Rolly": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Milky Way": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Got You!": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        }
+    },
+
+    "NL": {
+        "buffs": {
+            "Wooki...!": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Zumyu...!": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Poco...!": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Bibi...!": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            }
+        }
+    },
+
+    "TP": {
+        "buffs": {
+            "Rawr": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Twitter Whistle": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            }
+        }
+    },
+
+    "LIB": {
+        "buffs": {
+            "White Night": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Unfamiliar Dawn": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Mirage": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "New Moon": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        }
+    },
+
+    "CEL": {
+        "buffs": {
+            "Natal Chart": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Horary": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Horoscope, Aquarius Card": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Infinite Track, Leo Card": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Navigator of Space, Gemini Card": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Zodiac": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Nebula": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
             }
         }
     },
@@ -231,6 +1626,147 @@
                 "effect": "aaaa",
                 "duration": "20s",
                 "cooldown": "19s"
+            }
+        }
+    },
+
+    "MO": {
+        "buffs": {
+            "Eternal Fog": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Blood Moon": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            }
+        }
+    },
+
+    "GB": {
+        "buffs": {
+            "Power Stone": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Guard Stone": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        }
+    },
+
+    "AV": {
+        "buffs": {
+            "Golden Vow": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Reasonable Price": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Grandeur": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Harmattan": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Inspire": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Miracle": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Logical Choice": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Horizon": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Generosity": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Deluxe Blessing": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Falling Flower": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Kudos": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+
+        "debuffs": {
+            "Horizon": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Desolate": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            },
+            "Rumor": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        }
+    },
+
+    "AC": {
+        "buffs": {
+            "Adsorb": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Engrossed Researcher": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            },
+            "Portrude": {
+                "effect": "15% Critical Damage when casting Fierce Tiger secret art",
+                "duration": "30s"
+            }
+        },
+        "debuffs": {
+            "Scientific Name: Polypus": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Scientific Name: Trygon": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
+            }
+        }
+    },
+
+    "MC": {
+        "debuffs": {
+            "King le Pix": {
+                "effect": "-35% Defense, -30% Action Speed",
+                "duration": "8s",
+                "cooldown": "21s"
+            },
+            "Diabolo": {
+                "effect": "-5% Defense, 12% Physical Damage Taken on hit",
+                "duration": "5s"
             }
         }
     }

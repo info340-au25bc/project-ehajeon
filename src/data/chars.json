@@ -141,7 +141,7 @@
       "OZ": {
         "name": "Oz Sorcerer",
         "type": "Magical",
-        "role": "DPS",
+        "role": "Synergy DPS",
         "desc": "A mage who wielding dark magic.",
         "pros": "---",
         "cons": "Movement learning curve",
@@ -387,7 +387,7 @@
       "NI": {
         "name": "Nova Imperator",
         "type": "Magical",
-        "role": "DPS",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
@@ -471,7 +471,7 @@
       "CES": {
         "name": "Code Esencia",
         "type": "Physical",
-        "role": "DPS",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
@@ -497,7 +497,7 @@
       "CS": {
         "name": "Code Sariel",
         "type": "Magical",
-        "role": "DPS",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
@@ -607,7 +607,7 @@
       "CENT": {
         "name": "Centurion",
         "type": "Magical",
-        "role": "DPS",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
@@ -911,7 +911,7 @@
       "DOM": {
         "name": "Dominator",
         "type": "Physical",
-        "role": "DPS",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
@@ -937,7 +937,7 @@
       "MP": {
         "name": "Mad Paradox",
         "type": "Magical",
-        "role": "DPS",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
@@ -1105,7 +1105,7 @@
       "TB": {
         "name": "Tempest Burster",
         "type": "Physical",
-        "role": "DPS",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
@@ -1183,7 +1183,7 @@
       "PO": {
         "name": "Prime Operator",
         "type": "Magical",
-        "role": "DPS",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
@@ -1377,7 +1377,7 @@
       "NL": {
         "name": "Nisha Labyrinth",
         "type": "Physical",
-        "role": "DPS",
+        "role": "Synergy DPS",
         "desc": "A devoted savior just for Laby.",
         "pros": "Valuable asset on the team",
         "cons": "Rotationally dependent",
