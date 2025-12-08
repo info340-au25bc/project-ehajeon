@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CHAR_DATA from "../data/chars.json"
+import { Link } from 'react-router';
 
 export function QuizPage(props) {
     // STATES
@@ -35,7 +36,7 @@ export function QuizPage(props) {
                             </header>
                             <h2>Not sure who to main?</h2>
                             <p>Take the quiz here!</p>
-                            <a href="quiz_pages/q_one.html" className="button">START</a>
+                            <Link to="/questions" className="button">START</Link>
                         </div>
                         <img src="img/KEBanner.png" className="banner" alt="Knight Emperor's Master Class skill cut-in"></img>
                     </div>
@@ -72,7 +73,7 @@ export function QuizPage(props) {
 
 // SEPARATE FUNCTIONS
 
-function ExpandOverview({ char, activeJob, setActiveJob }) {
+export function ExpandOverview({ char, activeJob, setActiveJob }) {
   const jobData = char.jobs[activeJob];
 
   return (
@@ -98,7 +99,7 @@ function ExpandOverview({ char, activeJob, setActiveJob }) {
 
       <div className="char-info">
         <h3>{jobData.name}</h3>
-        <h4>{jobData.role}</h4>
+        <h4>{jobData.type} {jobData.role}</h4>
         <p>{jobData.desc}</p>
         <p><strong>Pros:</strong> {jobData.pros}</p>
         <p><strong>Cons:</strong> {jobData.cons}</p>
@@ -106,5 +107,3 @@ function ExpandOverview({ char, activeJob, setActiveJob }) {
     </>
   );
 }
-
-// <expandOverview jobData={selectedChar} />

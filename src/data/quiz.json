@@ -1,0 +1,146 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Physical or Magical?",
+            "type": "filter",
+            "answers": [
+                { "ans": "Physical",
+                "filter": { "type": "Physical" } },
+                { "ans": "Magical",
+                "filter": { "type": "Magical" } }
+            ]
+        },
+
+        {
+            "id": 2,
+            "question": "DPS or Support?",
+            "type": "filter",
+            "answers": [
+                { "ans": "Full DPS", 
+                  "filter": { "role": ["DPS"] } },
+                { "ans": "Dps-Leaning",
+                  "filter": { "role":["DPS", "Synergy DPS"] } },
+                { "ans": "In-Between",
+                  "filter": { "role": ["Synergy DPS"] } },
+                { "ans": "Support-Leaning",
+                  "filter": { "role": ["Synergy DPS", "Support"] } },
+                { "ans": "Full Support",
+                  "filter": { "role": ["Support"] } }
+            ]
+        },
+
+        {
+            "id": 3,
+            "question": "Better clearing or bossing?",
+            "type": "score",
+            "answers": [
+                { "ans": "Clearing", "score": { "clear": 5 } },
+                { "ans": "Bossing", "score": { "boss": 5 } }
+            ]
+        },
+
+        {
+            "id": 4,
+            "question": "Preferred level of piloting difficulty?",
+            "type": "score",
+            "answers": [
+                { "ans": "Easy", "score": { "ease": 5 } },
+                { "ans": "Medium", "score": { "ease": 3 } },
+                { "ans": "Hard", "score": { "ease": 1 } }
+            ]
+        },
+
+        {
+            "id": 5,
+            "question": "Preferred level of mobility?",
+            "type": "score",
+            "answers": [
+                { "ans": "Easy", "score": { "mobility": 5 } },
+                { "ans": "Medium", "score": { "mobility": 3 } },
+                { "ans": "Hard", "score": { "mobility": 1 } }
+            ]
+        },
+
+        {
+            "id": 6,
+            "question": "Choose your favorite Stat!",
+            "type": "score",
+            "answers": [
+                { "ans": "Strength", "score": { "stat": "STR" } },
+                { "ans": "Defense", "score": { "stat": "DEF" } },
+                { "ans": "Intelligence", "score": { "stat": "INT" } },
+                { "ans": "Luck", "score": { "stat": "LCK" } },
+                { "ans": "Speed", "score": { "stat": "SPD" } }
+            ]
+        },
+
+        {
+            "id": 7,
+            "question": "Choose your favorite Element!",
+            "type": "score",
+            "answers": [
+                { "ans": "Fire", "score": { "element": "fire" } },
+                { "ans": "Water", "score": { "element": "water" } },
+                { "ans": "Wind", "score": { "element": "wind" } },
+                { "ans": "Earth", "score": { "element": "earth" } },
+                { "ans": "Sun", "score": { "element": "sun" } },
+                { "ans": "Moon", "score": { "element": "moon" } },
+                { "ans": "Tech", "score": { "element": "tech" } },
+                { "ans": "Aether", "score": { "element": "aether" } }
+            ]
+        },
+
+        {
+            "id": 8,
+            "question": "Choose your favorite Archetype!",
+            "type": "score",
+            "answers": [
+                { "ans": "Knight", "score": { "archetype": "knight" } },
+                { "ans": "Magician", "score": { "archetype": "magician" } },
+                { "ans": "Archer", "score": { "archetype": "archer" } },
+                { "ans": "Lancer", "score": { "archetype": "lancer" } },
+                { "ans": "Brawler", "score": { "archetype": "brawler" } },
+                { "ans": "Gunman", "score": { "archetype": "gunman" } },
+                { "ans": "Berserker", "score": { "archetype": "berserker" } },
+                { "ans": "Assassin", "score": { "archetype": "assassin" } },
+                { "ans": "Medic", "score": { "archetype": "medic" } },
+                { "ans": "Commander", "score": { "archetype": "commander" } },
+                { "ans": "Scientist", "score": { "archetype": "scientist" } }
+            ]
+        },
+
+        {
+            "id": 9,
+            "question": "What path would you take?",
+            "type": "score",
+            "answers": [
+                { "ans": "Imperial, following tradition", "score": { "trait": "imperial" } },
+                { "ans": "Rebellion, pursuing freedom", "score": { "trait": "rebellion" } },
+                { "ans": "Transform, to be changed", "score": { "trait": "transform" } },
+                { "ans": "Revelation, returning to origins", "score": { "trait": "revelation" } }
+            ]
+        },
+
+        {
+            "id": 10,
+            "question": "Personal fighting style preference?",
+            "type": "score",
+            "answers": [
+                { "ans": "Melee", "score": { "style": "melee" } },
+                { "ans": "Ranged", "score": { "style": "ranged" } }
+            ]
+        },
+
+        {
+            "id": 11,
+            "question": "(Optional) Preferred gender of character?",
+            "type": "score",
+            "answers": [
+                { "ans": "Male", "score": { "gender": "male" } },
+                { "ans": "Female", "score": { "gender": "female" } },
+                { "ans": "Don't care", "score": { "gender": null } }
+            ]
+        }
+    ]
+}

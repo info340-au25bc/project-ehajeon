@@ -4,43 +4,107 @@
     "jobs": {
       "KE": {
         "name": "Knight Emperor",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "Knight of Elrios, forging his own path.",
         "pros": "Great bossing and clearing with good utility tools",
         "cons": "Slow casting, limited movement",
+        "icon": "img/icons/KE.png",
         "img": "img/portraits/01-ELS/KE.png",
+        "mc": "img/portraits/01-ELS/MC_KE.png",
         "crop": "img/portraits-cropped/01-ELS/MC_KE.png",
-        "paths": ["KE", "RM", "IM", "GN"]
+        "gradient": "linear-gradient(to bottom, rgb(14, 14, 14) 0%, rgb(148, 30, 30) 50%)",
+        "paths": ["KE", "RM", "IM", "GN"],
+        "stats": {
+                "clear": 3,
+                "boss": 4,
+                "ease": 4,
+                "mobility": 2,
+                "stat": "STR",
+                "element": "sun",
+                "archetype": "knight",
+                "trait": "imperial",
+                "style": "melee",
+                "gender": "male"
+        }
       },
       "RM": {
         "name": "Rune Master",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "A magic swordsman with wielding fiery runes.",
         "pros": "Good clearing",
         "cons": "Very average output and minimal debuffing capability",
+        "icon": "img/icons/RM.png",
         "img": "img/portraits/01-ELS/RM.png",
+        "mc": "img/portraits/01-ELS/MC_RM.png",
         "crop": "img/portraits-cropped/01-ELS/MC_RM.png",
-        "paths": ["KE", "RM", "IM", "GN"]
+        "gradient": "linear-gradient(to bottom, rgb(14, 14, 14) 0%, rgb(148, 30, 30) 50%)",
+        "paths": ["KE", "RM", "IM", "GN"],
+        "stats": {
+                "clear": 2,
+                "boss": 3,
+                "ease": 3,
+                "mobility": 2,
+                "stat": "STR",
+                "element": "sun",
+                "archetype": "magician",
+                "trait": "rebellion",
+                "style": "melee",
+                "gender": "male"
+        }
       },
       "IM": {
         "name": "Immortal",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "A swordsman with endless potential.",
         "pros": "Impressive damage output",
         "cons": "Subpar clearing",
+        "icon": "img/icons/IM.png",
         "img": "img/portraits/01-ELS/IM.png",
+        "mc": "img/portraits/01-ELS/MC_IM.png",
         "crop": "img/portraits-cropped/01-ELS/MC_IM.png",
-        "paths": ["KE", "RM", "IM", "GN"]
+        "gradient": "linear-gradient(to bottom, rgb(14, 14, 14) 0%, rgb(148, 30, 30) 50%)",
+        "paths": ["KE", "RM", "IM", "GN"],
+        "stats": {
+                "clear": 2,
+                "boss": 4,
+                "ease": 3,
+                "mobility": 2,
+                "stat": "STR",
+                "element": "sun",
+                "archetype": "berserker",
+                "trait": "transform",
+                "style": "melee",
+                "gender": "male"
+        }
       },
       "GN": {
         "name": "Genesis",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "Guardian of Elrios.",
         "pros": "Easiest Elboy to play",
         "cons": "Generic DPS",
+        "icon": "img/icons/GN.png",
         "img": "img/portraits/01-ELS/GN.png",
+        "mc": "img/portraits/01-ELS/MC_GN.png",
         "crop": "img/portraits-cropped/01-ELS/MC_GN.png",
-        "paths": ["KE", "RM", "IM", "GN"]
+        "gradient": "linear-gradient(to bottom, rgb(14, 14, 14) 0%, rgb(148, 30, 30) 50%)",
+        "paths": ["KE", "RM", "IM", "GN"],
+        "stats": {
+                "clear": 3,
+                "boss": 4,
+                "ease": 4,
+                "mobility": 3,
+                "stat": "STR",
+                "element": "sun",
+                "archetype": "knight",
+                "trait": "revelation",
+                "style": "melee",
+                "gender": "male"
+        }
       }
     }
   },
@@ -50,43 +114,107 @@
     "jobs": {
       "AES": {
         "name": "Aether Sage",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "An accomplished scholar in the elements.",
         "pros": "Good rotations and damage",
         "cons": "Movement learning curve",
+        "icon": "img/icons/AES.png",
         "img": "img/portraits/02-AISHA/AES.png",
+        "mc": "img/portraits/02-AISHA/MC_AES.png",
         "crop": "img/portraits-cropped/02-AISHA/MC_AES.png",
-        "paths": ["AES", "OZ", "MTM", "LA"]
+        "gradient": "linear-gradient(to bottom, rgb(4, 3, 30) 0%, rgb(112, 69, 143) 50%)",
+        "paths": ["AES", "OZ", "MTM", "LA"],
+        "stats": {
+                "clear": 4,
+                "boss": 4,
+                "ease": 2,
+                "mobility": 2,
+                "stat": "INT",
+                "element": "water",
+                "archetype": "magician",
+                "trait": "imperial",
+                "style": "ranged",
+                "gender": "female"
+        }
       },
       "OZ": {
         "name": "Oz Sorcerer",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "A mage who wielding dark magic.",
         "pros": "---",
         "cons": "Movement learning curve",
+        "icon": "img/icons/OZ.png",
         "img": "img/portraits/02-AISHA/OZ.png",
+        "mc": "img/portraits/02-AISHA/MC_OZ.png",
         "crop": "img/portraits-cropped/02-AISHA/MC_OZ.png",
-        "paths": ["AES", "OZ", "MTM", "LA"]
+        "gradient": "linear-gradient(to bottom, rgb(4, 3, 30) 0%, rgb(112, 69, 143) 50%)",
+        "paths": ["AES", "OZ", "MTM", "LA"],
+        "stats": {
+                "clear": 2,
+                "boss": 3,
+                "ease": 2,
+                "mobility": 2,
+                "stat": "LCK",
+                "element": "water",
+                "archetype": "magician",
+                "trait": "rebellion",
+                "style": "ranged",
+                "gender": "female"
+        }
       },
       "MTM": {
         "name": "Metamorphy",
-        "role": "Physical Synergy DPS",
+        "type": "Physical",
+        "role": "Synergy DPS",
         "desc": "A powerful magical girl.",
         "pros": "Great amp",
         "cons": "Movement learning curve",
+        "icon": "img/icons/MTM.png",
         "img": "img/portraits/02-AISHA/MTM.png",
+        "mc": "img/portraits/02-AISHA/MC_MTM.png",
         "crop": "img/portraits-cropped/02-AISHA/MC_MTM.png",
-        "paths": ["AES", "OZ", "MTM", "LA"]
+        "gradient": "linear-gradient(to bottom, rgb(4, 3, 30) 0%, rgb(112, 69, 143) 50%)",
+        "paths": ["AES", "OZ", "MTM", "LA"],
+        "stats": {
+                "clear": 3,
+                "boss": 3,
+                "ease": 2,
+                "mobility": 2,
+                "stat": "STR",
+                "element": "water",
+                "archetype": "magician",
+                "trait": "transform",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "LA": {
         "name": "Lord Azoth",
-        "role": "Physical Synergy DPS",
+        "type": "Physical",
+        "role": "Synergy DPS",
         "desc": "An immortal alchemist.",
         "pros": "Good amp",
         "cons": "Movement learning curve",
+        "icon": "img/icons/LA.png",
         "img": "img/portraits/02-AISHA/LA.png",
+        "mc": "img/portraits/02-AISHA/MC_LA.png",
         "crop": "img/portraits-cropped/02-AISHA/MC_LA.png",
-        "paths": ["AES", "OZ", "MTM", "LA"]
+        "gradient": "linear-gradient(to bottom, rgb(4, 3, 30) 0%, rgb(112, 69, 143) 50%)",
+        "paths": ["AES", "OZ", "MTM", "LA"],
+        "stats": {
+                "clear": 4,
+                "boss": 2,
+                "ease": 3,
+                "mobility": 2,
+                "stat": "INT",
+                "element": "water",
+                "archetype": "scientist",
+                "trait": "revelation",
+                "style": "melee",
+                "gender": "female"
+        }
       }
     }
   },
@@ -96,43 +224,107 @@
     "jobs": {
       "AN": {
         "name": "Anemos",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/AN.png",
         "img": "img/portraits/03-RENA/AN.png",
+        "mc": "img/portraits/03-RENA/MC_AN.png",
         "crop": "img/portraits-cropped/03-RENA/MC_AN.png",
-        "paths": ["AN", "DAB", "TW", "PR"]
+        "gradient": "linear-gradient(to bottom, rgb(16, 23, 24) 0%, rgb(130, 175, 111) 50%)",
+        "paths": ["AN", "DAB", "TW", "PR"],
+        "stats": {
+                "clear": 5,
+                "boss": 4,
+                "ease": 4,
+                "mobility": 4,
+                "stat": "STR",
+                "element": "wind",
+                "archetype": "brawler",
+                "trait": "rebellion",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "DAB": {
         "name": "Daybreaker",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/DAB.png",
         "img": "img/portraits/03-RENA/DAB.png",
+        "mc": "img/portraits/03-RENA/MC_DAB.png",
         "crop": "img/portraits-cropped/03-RENA/MC_DAB.png",
-        "paths": ["AN", "DAB", "TW", "PR"]
+        "gradient": "linear-gradient(to bottom, rgb(16, 23, 24) 0%, rgb(130, 175, 111) 50%)",
+        "paths": ["AN", "DAB", "TW", "PR"],
+        "stats": {
+                "clear": 5,
+                "boss": 4,
+                "ease": 4,
+                "mobility": 4,
+                "stat": "INT",
+                "element": "wind",
+                "archetype": "archer",
+                "trait": "imperial",
+                "style": "ranged",
+                "gender": "female"
+        }
       },
       "TW": {
         "name": "Twilight",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/TW.png",
         "img": "img/portraits/03-RENA/TW.png",
+        "mc": "img/portraits/03-RENA/MC_TW.png",
         "crop": "img/portraits-cropped/03-RENA/MC_TW.png",
-        "paths": ["AN", "DAB", "TW", "PR"]
+        "gradient": "linear-gradient(to bottom, rgb(16, 23, 24) 0%, rgb(130, 175, 111) 50%)",
+        "paths": ["AN", "DAB", "TW", "PR"],
+        "stats": {
+                "clear": 3,
+                "boss": 4,
+                "ease": 2,
+                "mobility": 4,
+                "stat": "SPD",
+                "element": "wind",
+                "archetype": "assassin",
+                "trait": "transform",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "PR": {
         "name": "Prophetess",
-        "role": "Magical Hybrid",
+        "type": "Magical",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/PR.png",
         "img": "img/portraits/03-RENA/PR.png",
+        "mc": "img/portraits/03-RENA/MC_PR.png",
         "crop": "img/portraits-cropped/03-RENA/MC_PR.png",
-        "paths": ["AN", "DAB", "TW", "PR"]
+        "gradient": "linear-gradient(to bottom, rgb(16, 23, 24) 0%, rgb(130, 175, 111) 50%)",
+        "paths": ["AN", "DAB", "TW", "PR"],
+        "stats": {
+                "clear": 3,
+                "boss": 3,
+                "ease": 4,
+                "mobility": 3,
+                "stat": "LCK",
+                "element": "wind",
+                "archetype": "archer",
+                "trait": "revelation",
+                "style": "ranged",
+                "gender": "female"
+        }
       }
     }
   },
@@ -142,43 +334,107 @@
     "jobs": {
       "FB": {
         "name": "Furious Blade",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/FB.png",
         "img": "img/portraits/04-RAVEN/FB.png",
+        "mc": "img/portraits/04-RAVEN/MC_FB.png",
+        "gradient": "linear-gradient(to bottom, rgb(2, 3, 11) 0%, rgb(150, 150, 154) 50%)",
         "crop": "img/portraits-cropped/04-RAVEN/MC_FB.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "paths": ["FB", "RH", "NI", "RV"],
+        "stats": {
+                "clear": 4,
+                "boss": 3,
+                "ease": 4,
+                "mobility": 2,
+                "stat": "SPD",
+                "element": "sun",
+                "archetype": "knight",
+                "trait": "imperial",
+                "style": "melee",
+                "gender": "male"
+        }
       },
       "RH": {
         "name": "Rage Hearts",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/RH.png",
         "img": "img/portraits/04-RAVEN/RH.png",
+        "mc": "img/portraits/04-RAVEN/MC_RH.png",
         "crop": "img/portraits-cropped/04-RAVEN/MC_RH.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "gradient": "linear-gradient(to bottom, rgb(2, 3, 11) 0%, rgb(150, 150, 154) 50%)",
+        "paths": ["FB", "RH", "NI", "RV"],
+        "stats": {
+                "clear": 3,
+                "boss": 4,
+                "ease": 3,
+                "mobility": 2,
+                "stat": "STR",
+                "element": "sun",
+                "archetype": "berserker",
+                "trait": "rebellion",
+                "style": "melee",
+                "gender": "male"
+        }
       },
       "NI": {
         "name": "Nova Imperator",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/NI.png",
         "img": "img/portraits/04-RAVEN/NI.png",
+        "mc": "img/portraits/04-RAVEN/MC_NI.png",
         "crop": "img/portraits-cropped/04-RAVEN/MC_NI.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "gradient": "linear-gradient(to bottom, rgb(2, 3, 11) 0%, rgb(150, 150, 154) 50%)",
+        "paths": ["FB", "RH", "NI", "RV"],
+        "stats": {
+                "clear": 2,
+                "boss": 3,
+                "ease": 3,
+                "mobility": 2,
+                "stat": "LCK",
+                "element": "sun",
+                "archetype": "commander",
+                "trait": "transform",
+                "style": "ranged",
+                "gender": "male"
+        }
       },
       "RV": {
         "name": "Revenant",
-        "role": "Physical Hybrid",
+        "type": "Physical",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/RV.png",
         "img": "img/portraits/04-RAVEN/RV.png",
+        "mc": "img/portraits/04-RAVEN/MC_RV.png",
         "crop": "img/portraits-cropped/04-RAVEN/MC_RV.png",
-        "paths": ["FB", "RH", "NI", "RV"]
+        "gradient": "linear-gradient(to bottom, rgb(2, 3, 11) 0%, rgb(150, 150, 154) 50%)",
+        "paths": ["FB", "RH", "NI", "RV"],
+        "stats": {
+                "clear": 4,
+                "boss": 3,
+                "ease": 4,
+                "mobility": 3,
+                "stat": "STR",
+                "element": "sun",
+                "archetype": "assassin",
+                "trait": "revelation",
+                "style": "melee",
+                "gender": "male"
+        }
       }
     }
   },
@@ -188,43 +444,107 @@
     "jobs": {
       "CU": {
         "name": "Code Ultimate",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/CU.png",
         "img": "img/portraits/05-EVE/CU.png",
+        "mc": "img/portraits/05-EVE/MC_CU.png",
         "crop": "img/portraits-cropped/05-EVE/MC_CU.png",
-        "paths": ["CU", "CES", "CS", "CA"]
+        "gradient": "linear-gradient(to bottom, rgb(16, 19, 37) 0%, rgb(189, 139, 161) 50%)",
+        "paths": ["CU", "CES", "CS", "CA"],
+        "stats": {
+                "clear": 2,
+                "boss": 3,
+                "ease": 2,
+                "mobility": 2,
+                "stat": "INT",
+                "element": "tech",
+                "archetype": "scientist",
+                "trait": "rebellion",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "CES": {
         "name": "Code Esencia",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/CES.png",
         "img": "img/portraits/05-EVE/CES.png",
+        "mc": "img/portraits/05-EVE/MC_CES.png",
         "crop": "img/portraits-cropped/05-EVE/MC_CES.png",
-        "paths": ["CU", "CES", "CS", "CA"]
+        "gradient": "linear-gradient(to bottom, rgb(16, 19, 37) 0%, rgb(189, 139, 161) 50%)",
+        "paths": ["CU", "CES", "CS", "CA"],
+        "stats": {
+                "clear": 4,
+                "boss": 3,
+                "ease": 3,
+                "mobility": 2,
+                "stat": "DEF",
+                "element": "tech",
+                "archetype": "commander",
+                "trait": "imperial",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "CS": {
         "name": "Code Sariel",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/CS.png",
         "img": "img/portraits/05-EVE/CS.png",
+        "mc": "img/portraits/05-EVE/MC_CS.png",
         "crop": "img/portraits-cropped/05-EVE/MC_CS.png",
-        "paths": ["CU", "CES", "CS", "CA"]
+        "gradient": "linear-gradient(to bottom, rgb(16, 19, 37) 0%, rgb(189, 139, 161) 50%)",
+        "paths": ["CU", "CES", "CS", "CA"],
+        "stats": {
+                "clear": 4,
+                "boss": 3,
+                "ease": 4,
+                "mobility": 4,
+                "stat": "SPD",
+                "element": "tech",
+                "archetype": "scientist",
+                "trait": "transform",
+                "style": "ranged",
+                "gender": "female"
+        }
       },
       "CA": {
         "name": "Code Antithese",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/CA.png",
         "img": "img/portraits/05-EVE/CA.png",
+        "mc": "img/portraits/05-EVE/MC_CA.png",
         "crop": "img/portraits-cropped/05-EVE/MC_CA.png",
-        "paths": ["CU", "CES", "CS", "CA"]
+        "gradient": "linear-gradient(to bottom, rgb(16, 19, 37) 0%, rgb(189, 139, 161) 50%)",
+        "paths": ["CU", "CES", "CS", "CA"],
+        "stats": {
+                "clear": 4,
+                "boss": 4,
+                "ease": 5,
+                "mobility": 4,
+                "stat": "STR",
+                "element": "tech",
+                "archetype": "scientist",
+                "trait": "revelation",
+                "style": "ranged",
+                "gender": "female"
+        }
       }
     }
   },
@@ -234,43 +554,107 @@
     "jobs": {
       "CC": {
         "name": "Comet Crusader",
-        "role": "Physical Hyrbid",
+        "type": "Physical",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/CC.png",
         "img": "img/portraits/06-CHU/CC.png",
+        "mc": "img/portraits/06-CHU/MC_CC.png",
         "crop": "img/portraits-cropped/06-CHU/MC_CC.png",
-        "paths": ["CC", "FP", "CENT", "DA"]
+        "gradient": "linear-gradient(to bottom, rgb(3, 8, 47) 0%, rgb(58, 136, 181) 50%)",
+        "paths": ["CC", "FP", "CENT", "DA"],
+        "stats": {
+                "clear": 4,
+                "boss": 3,
+                "ease": 4,
+                "mobility": 3,
+                "stat": "DEF",
+                "element": "water",
+                "archetype": "gunman",
+                "trait": "imperial",
+                "style": "melee",
+                "gender": "male"
+        }
       },
       "FP": {
         "name": "Fatal Phantom",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/FP.png",
         "img": "img/portraits/06-CHU/FP.png",
+        "mc": "img/portraits/06-CHU/MC_FP.png",
         "crop": "img/portraits-cropped/06-CHU/MC_FP.png",
-        "paths": ["CC", "FP", "CENT", "DA"]
+        "gradient": "linear-gradient(to bottom, rgb(3, 8, 47) 0%, rgb(58, 136, 181) 50%)",
+        "paths": ["CC", "FP", "CENT", "DA"],
+        "stats": {
+                "clear": 4,
+                "boss": 5,
+                "ease": 3,
+                "mobility": 3,
+                "stat": "INT",
+                "element": "water",
+                "archetype": "assassin",
+                "trait": "rebellion",
+                "style": "ranged",
+                "gender": "male"
+        }
       },
       "CENT": {
         "name": "Centurion",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/CENT.png",
         "img": "img/portraits/06-CHU/CENT.png",
+        "mc": "img/portraits/06-CHU/MC_CENT.png",
         "crop": "img/portraits-cropped/06-CHU/MC_CENT.png",
-        "paths": ["CC", "FP", "CENT", "DA"]
+        "gradient": "linear-gradient(to bottom, rgb(3, 8, 47) 0%, rgb(58, 136, 181) 50%)",
+        "paths": ["CC", "FP", "CENT", "DA"],
+        "stats": {
+                "clear": 3,
+                "boss": 3,
+                "ease": 3,
+                "mobility": 3,
+                "stat": "LCK",
+                "element": "water",
+                "archetype": "commander",
+                "trait": "transform",
+                "style": "ranged",
+                "gender": "male"
+        }
       },
       "DA": {
         "name": "Dius Aer",
-        "role": "Physical Support",
+        "type": "Physical",
+        "role": "Support",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/DA.png",
         "img": "img/portraits/06-CHU/DA.png",
+        "mc": "img/portraits/06-CHU/MC_DA.png",
         "crop": "img/portraits-cropped/06-CHU/MC_DA.png",
-        "paths": ["CC", "FP", "CENT", "DA"]
+        "gradient": "linear-gradient(to bottom, rgb(3, 8, 47) 0%, rgb(58, 136, 181) 50%)",
+        "paths": ["CC", "FP", "CENT", "DA"],
+        "stats": {
+                "clear": 5,
+                "boss": 3,
+                "ease": 5,
+                "mobility": 4,
+                "stat": "SPD",
+                "element": "water",
+                "archetype": "medic",
+                "trait": "revelation",
+                "style": "ranged",
+                "gender": "male"
+        }
       }
     }
   },
@@ -280,43 +664,107 @@
     "jobs": {
       "APS": {
         "name": "Apsara",
-        "role": "Physical Hybrid",
+        "type": "Physical",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/APS.png",
         "img": "img/portraits/07-ARA/APS.png",
+        "mc": "img/portraits/07-ARA/MC_APS.png",
         "crop": "img/portraits-cropped/07-ARA/MC_APS.png",
-        "paths": ["APS", "DEVI", "SH", "SU"]
+        "gradient": "linear-gradient(to bottom, rgb(14, 5, 5) 0%, rgb(224, 135, 41) 50%)",
+        "paths": ["APS", "DEVI", "SH", "SU"],
+        "stats": {
+                "clear": 3,
+                "boss": 3,
+                "ease": 3,
+                "mobility": 4,
+                "stat": "SPD",
+                "element": "earth",
+                "archetype": "lancer",
+                "trait": "imperial",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "DEVI": {
         "name": "Devi",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/DEVI.png",
         "img": "img/portraits/07-ARA/DEVI.png",
+        "mc": "img/portraits/07-ARA/MC_DEVI.png",
         "crop": "img/portraits-cropped/07-ARA/MC_DEVI.png",
-        "paths": ["APS", "DEVI", "SH", "SU"]
+        "gradient": "linear-gradient(to bottom, rgb(14, 5, 5) 0%, rgb(224, 135, 41) 50%)",
+        "paths": ["APS", "DEVI", "SH", "SU"],
+        "stats": {
+                "clear": 3,
+                "boss": 4,
+                "ease": 2,
+                "mobility": 3,
+                "stat": "INT",
+                "element": "earth",
+                "archetype": "assassin",
+                "trait": "rebellion",
+                "style": "ranged",
+                "gender": "female"
+        }
       },
       "SH": {
         "name": "Shakti",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/SH.png",
         "img": "img/portraits/07-ARA/SH.png",
+        "mc": "img/portraits/07-ARA/MC_SH.png",
         "crop": "img/portraits-cropped/07-ARA/MC_SH.png",
-        "paths": ["APS", "DEVI", "SH", "SU"]
+        "gradient": "linear-gradient(to bottom, rgb(14, 5, 5) 0%, rgb(224, 135, 41) 50%)",
+        "paths": ["APS", "DEVI", "SH", "SU"],
+        "stats": {
+                "clear": 4,
+                "boss": 3,
+                "ease": 4,
+                "mobility": 3,
+                "stat": "STR",
+                "element": "earth",
+                "archetype": "lancer",
+                "trait": "transform",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "SU": {
         "name": "Surya",
-        "role": "Magical Support",
+        "type": "Magical",
+        "role": "Support",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/SU.png",
         "img": "img/portraits/07-ARA/SU.png",
+        "mc": "img/portraits/07-ARA/MC_SU.png",
         "crop": "img/portraits-cropped/07-ARA/MC_SU.png",
-        "paths": ["APS", "DEVI", "SH", "SU"]
+        "gradient": "linear-gradient(to bottom, rgb(14, 5, 5) 0%, rgb(224, 135, 41) 50%)",
+        "paths": ["APS", "DEVI", "SH", "SU"],
+        "stats": {
+                "clear": 4,
+                "boss": 3,
+                "ease": 3,
+                "mobility": 3,
+                "stat": "DEF",
+                "element": "earth",
+                "archetype": "medic",
+                "trait": "revelation",
+                "style": "ranged",
+                "gender": "female"
+        }
       }
     }
   },
@@ -326,43 +774,107 @@
     "jobs": {
       "ES": {
         "name": "Empire Sword",
-        "role": "Physical Hybrid",
+        "type": "Physical",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/ES.png",
         "img": "img/portraits/08-ELE/ES.png",
+        "mc": "img/portraits/08-ELE/MC_ES.png",
         "crop": "img/portraits-cropped/08-ELE/MC_ES.png",
-        "paths": ["ES", "FL", "BQ", "ADR"]
+        "gradient": "linear-gradient(to bottom, rgb(2, 3, 11) 0%, rgb(117, 37, 53) 50%)",
+        "paths": ["ES", "FL", "BQ", "ADR"],
+        "stats": {
+                "clear": 3,
+                "boss": 3,
+                "ease": 3,
+                "mobility": 3,
+                "stat": "STR",
+                "element": "fire",
+                "archetype": "commander",
+                "trait": "imperial",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "FL": {
         "name": "Flame Lord",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/FL.png",
         "img": "img/portraits/08-ELE/FL.png",
+        "mc": "img/portraits/08-ELE/MC_FL.png",
         "crop": "img/portraits-cropped/08-ELE/MC_FL.png",
-        "paths": ["ES", "FL", "BQ", "ADR"]
+        "gradient": "linear-gradient(to bottom, rgb(2, 3, 11) 0%, rgb(117, 37, 53) 50%)",
+        "paths": ["ES", "FL", "BQ", "ADR"],
+        "stats": {
+                "clear": 3,
+                "boss": 2,
+                "ease": 3,
+                "mobility": 3,
+                "stat": "SPD",
+                "element": "fire",
+                "archetype": "knight",
+                "trait": "rebellion",
+                "style": "ranged",
+                "gender": "female"
+        }
       },
       "BQ": {
         "name": "Bloody Queen",
-        "role": "Magical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/BQ.png",
         "img": "img/portraits/08-ELE/BQ.png",
+        "mc": "img/portraits/08-ELE/MC_BQ.png",
         "crop": "img/portraits-cropped/08-ELE/MC_BQ.png",
-        "paths": ["ES", "FL", "BQ", "ADR"]
+        "gradient": "linear-gradient(to bottom, rgb(2, 3, 11) 0%, rgb(117, 37, 53) 50%)",
+        "paths": ["ES", "FL", "BQ", "ADR"],
+        "stats": {
+                "clear": 3,
+                "boss": 5,
+                "ease": 1,
+                "mobility": 3,
+                "stat": "STR",
+                "element": "fire",
+                "archetype": "berserker",
+                "trait": "transform",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "ADR": {
         "name": "Adrestia",
-        "role": "Physical Hybrid",
+        "type": "Magical",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/ADR.png",
         "img": "img/portraits/08-ELE/ADR.png",
+        "mc": "img/portraits/08-ELE/MC_ADR.png",
         "crop": "img/portraits-cropped/08-ELE/MC_ADR.png",
-        "paths": ["ES", "FL", "BQ", "ADR"]
+        "gradient": "linear-gradient(to bottom, rgb(2, 3, 11) 0%, rgb(117, 37, 53) 50%)",
+        "paths": ["ES", "FL", "BQ", "ADR"],
+        "stats": {
+                "clear": 3,
+                "boss": 2,
+                "ease": 3,
+                "mobility": 3,
+                "stat": "LCK",
+                "element": "fire",
+                "archetype": "knight",
+                "trait": "revelation",
+                "style": "ranged",
+                "gender": "female"
+        }
       }
     }
   },
@@ -372,43 +884,107 @@
     "jobs": {
       "DBR": {
         "name": "Doombringer",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/DBR.png",
         "img": "img/portraits/09-ADD/DBR.png",
+        "mc": "img/portraits/09-ADD/MC_DBR.png",
         "crop": "img/portraits-cropped/09-ADD/MC_DBR.png",
-        "paths": ["DBR", "DOM", "MP", "OM"]
+        "gradient": "linear-gradient(to bottom, rgb(1, 1, 17) 0%, rgb(71, 40, 113) 50%)",
+        "paths": ["DBR", "DOM", "MP", "OM"],
+        "stats": {
+                "clear": 3,
+                "boss": 4,
+                "ease": 3,
+                "mobility": 4,
+                "stat": "STR",
+                "element": "tech",
+                "archetype": "brawler",
+                "trait": "rebellion",
+                "style": "melee",
+                "gender": "male"
+        }
       },
       "DOM": {
         "name": "Dominator",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/DOM.png",
         "img": "img/portraits/09-ADD/DOM.png",
+        "mc": "img/portraits/09-ADD/MC_DOM.png",
         "crop": "img/portraits-cropped/09-ADD/MC_DOM.png",
-        "paths": ["DBR", "DOM", "MP", "OM"]
+        "gradient": "linear-gradient(to bottom, rgb(1, 1, 17) 0%, rgb(71, 40, 113) 50%)",
+        "paths": ["DBR", "DOM", "MP", "OM"],
+        "stats": {
+                "clear": 2,
+                "boss": 3,
+                "ease": 2,
+                "mobility": 4,
+                "stat": "INT",
+                "element": "tech",
+                "archetype": "scientist",
+                "trait": "imperial",
+                "style": "ranged",
+                "gender": "male"
+        }
       },
       "MP": {
         "name": "Mad Paradox",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/MP.png",
         "img": "img/portraits/09-ADD/MP.png",
+        "mc": "img/portraits/09-ADD/MC_MP.png",
         "crop": "img/portraits-cropped/09-ADD/MC_MP.png",
-        "paths": ["DBR", "DOM", "MP", "OM"]
+        "gradient": "linear-gradient(to bottom, rgb(1, 1, 17) 0%, rgb(71, 40, 113) 50%)",
+        "paths": ["DBR", "DOM", "MP", "OM"],
+        "stats": {
+                "clear": 3,
+                "boss": 4,
+                "ease": 3,
+                "mobility": 4,
+                "stat": "SPD",
+                "element": "tech",
+                "archetype": "berserker",
+                "trait": "transform",
+                "style": "ranged",
+                "gender": "male"
+        }
       },
       "OM": {
         "name": "Overmind",
-        "role": "Physical Hybrid",
+        "type": "Physical",
+        "role": "Support",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/OM.png",
         "img": "img/portraits/09-ADD/OM.png",
+        "mc": "img/portraits/09-ADD/MC_OM.png",
         "crop": "img/portraits-cropped/09-ADD/MC_OM.png",
-        "paths": ["DBR", "DOM", "MP", "OM"]
+        "gradient": "linear-gradient(to bottom, rgb(1, 1, 17) 0%, rgb(71, 40, 113) 50%)",
+        "paths": ["DBR", "DOM", "MP", "OM"],
+        "stats": {
+                "clear": 3,
+                "boss": 3,
+                "ease": 3,
+                "mobility": 4,
+                "stat": "LCK",
+                "element": "tech",
+                "archetype": "scientist",
+                "trait": "revelation",
+                "style": "ranged",
+                "gender": "male"
+        }
       }
     }
   },
@@ -418,43 +994,107 @@
     "jobs": {
       "CATA": {
         "name": "Catastrophe",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/CATA.png",
         "img": "img/portraits/10-LUCIEL/CATA.png",
+        "mc": "img/portraits/10-LUCIEL/MC_CATA.png",
         "crop": "img/portraits-cropped/10-LUCIEL/MC_CATA.png",
-        "paths": ["CATA", "INNO", "DIA", "DEM"]
+        "gradient": "linear-gradient(to bottom, rgb(3, 1, 26) 0%, rgb(0, 40, 126) 50%)",
+        "paths": ["CATA", "INNO", "DIA", "DEM"],
+        "stats": {
+                "clear": 2,
+                "boss": 3,
+                "ease": 3,
+                "mobility": 2,
+                "stat": "SPD",
+                "element": "fire",
+                "archetype": "brawler",
+                "trait": "rebellion",
+                "style": "melee",
+                "gender": [ "female", "male" ]
+        }
       },
       "INNO": {
         "name": "Innocent",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/INNO.png",
         "img": "img/portraits/10-LUCIEL/INNO.png",
+        "mc": "img/portraits/10-LUCIEL/MC_INNO.png",
         "crop": "img/portraits-cropped/10-LUCIEL/MC_INNO.png",
-        "paths": ["CATA", "INNO", "DIA", "DEM"]
+        "gradient": "linear-gradient(to bottom, rgb(3, 1, 26) 0%, rgb(0, 40, 126) 50%)",
+        "paths": ["CATA", "INNO", "DIA", "DEM"],
+        "stats": {
+                "clear": 5,
+                "boss": 2,
+                "ease": 4,
+                "mobility": 3,
+                "stat": "INT",
+                "element": "fire",
+                "archetype": "commander",
+                "trait": "imperial",
+                "style": "ranged",
+                "gender": [ "female", "male" ]
+        }
       },
       "DIA": {
         "name": "Diangelion",
-        "role": "Physical Hybrid",
+        "type": "Physical",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/DIA.png",
         "img": "img/portraits/10-LUCIEL/DIA.png",
+        "mc": "img/portraits/10-LUCIEL/MC_DIA.png",
         "crop": "img/portraits-cropped/10-LUCIEL/MC_DIA.png",
-        "paths": ["CATA", "INNO", "DIA", "DEM"]
+        "gradient": "linear-gradient(to bottom, rgb(3, 1, 26) 0%, rgb(0, 40, 126) 50%)",
+        "paths": ["CATA", "INNO", "DIA", "DEM"],
+        "stats": {
+                "clear": 3,
+                "boss": 2,
+                "ease": 2,
+                "mobility": 3,
+                "stat": "STR",
+                "element": "fire",
+                "archetype": "berserker",
+                "trait": "transform",
+                "style": "melee",
+                "gender": [ "female", "male" ]
+        }
       },
       "DEM": {
         "name": "Demersio",
-        "role": "Magical Support",
+        "type": "Magical",
+        "role": "Support",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/DEM.png",
         "img": "img/portraits/10-LUCIEL/DEM.png",
+        "mc": "img/portraits/10-LUCIEL/MC_DEM.png",
         "crop": "img/portraits-cropped/10-LUCIEL/MC_DEM.png",
-        "paths": ["CATA", "INNO", "DIA", "DEM"]
+        "gradient": "linear-gradient(to bottom, rgb(3, 1, 26) 0%, rgb(0, 40, 126) 50%)",
+        "paths": ["CATA", "INNO", "DIA", "DEM"],
+        "stats": {
+                "clear": 4,
+                "boss": 2,
+                "ease": 4,
+                "mobility": 3,
+                "stat": "LCK",
+                "element": "fire",
+                "archetype": "medic",
+                "trait": "revelation",
+                "style": "ranged",
+                "gender": [ "female", "male" ]
+        }
       }
     }
   },
@@ -464,43 +1104,107 @@
     "jobs": {
       "TB": {
         "name": "Tempest Burster",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/TB.png",
         "img": "img/portraits/11-ROSE/TB.png",
+        "mc": "img/portraits/11-ROSE/MC_TB.png",
         "crop": "img/portraits-cropped/11-ROSE/MC_TB.png",
-        "paths": ["TB", "BLM", "MN", "PO"]
+        "gradient": "linear-gradient(to bottom, rgb(21, 7, 6) 0%, rgb(210, 170, 101) 50%)",
+        "paths": ["TB", "BLM", "MN", "PO"],
+        "stats": {
+                "clear": 4,
+                "boss": 2,
+                "ease": 2,
+                "mobility": 3,
+                "stat": "STR",
+                "element": "wind",
+                "archetype": "gunman",
+                "trait": "rebellion",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "BLM": {
         "name": "Black Massacre",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/BLM.png",
         "img": "img/portraits/11-ROSE/BLM.png",
+        "mc": "img/portraits/11-ROSE/MC_BLM.png",
         "crop": "img/portraits-cropped/11-ROSE/MC_BLM.png",
-        "paths": ["TB", "BLM", "MN", "PO"]
+        "gradient": "linear-gradient(to bottom, rgb(21, 7, 6) 0%, rgb(210, 170, 101) 50%)",
+        "paths": ["TB", "BLM", "MN", "PO"],
+        "stats": {
+                "clear": 4,
+                "boss": 4,
+                "ease": 3,
+                "mobility": 3,
+                "stat": "SPD",
+                "element": "wind",
+                "archetype": "assassin",
+                "trait": "transform",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "MN": {
         "name": "Minerva",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/MN.png",
         "img": "img/portraits/11-ROSE/MN.png",
+        "mc": "img/portraits/11-ROSE/MC_MN.png",
         "crop": "img/portraits-cropped/11-ROSE/MC_MN.png",
-        "paths": ["TB", "BLM", "MN", "PO"]
+        "gradient": "linear-gradient(to bottom, rgb(21, 7, 6) 0%, rgb(210, 170, 101) 50%)",
+        "paths": ["TB", "BLM", "MN", "PO"],
+        "stats": {
+                "clear": 2,
+                "boss": 3,
+                "ease": 3,
+                "mobility": 2,
+                "stat": "LCK",
+                "element": "wind",
+                "archetype": "gunman",
+                "trait": "imperial",
+                "style": "ranged",
+                "gender": "female"
+        }
       },
       "PO": {
         "name": "Prime Operator",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/PO.png",
         "img": "img/portraits/11-ROSE/PO.png",
+        "mc": "img/portraits/11-ROSE/MC_PO.png",
         "crop": "img/portraits-cropped/11-ROSE/MC_PO.png",
-        "paths": ["TB", "BLM", "MN", "PO"]
+        "gradient": "linear-gradient(to bottom, rgb(21, 7, 6) 0%, rgb(210, 170, 101) 50%)",
+        "paths": ["TB", "BLM", "MN", "PO"],
+        "stats": {
+                "clear": 3,
+                "boss": 3,
+                "ease": 3,
+                "mobility": 3,
+                "stat": "INT",
+                "element": "wind",
+                "archetype": "commander",
+                "trait": "revelation",
+                "style": "ranged",
+                "gender": "female"
+        }
       }
     }
   },
@@ -510,43 +1214,107 @@
     "jobs": {
       "RI": {
         "name": "Richer",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/RI.png",
         "img": "img/portraits/12-AIN/RI.png",
+        "mc": "img/portraits/12-AIN/MC_RI.png",
         "crop": "img/portraits-cropped/12-AIN/MC_RI.png",
-        "paths": ["RI", "BL", "HR", "OP"]
+        "gradient": "linear-gradient(to bottom, rgb(3, 8, 30) 0%, rgb(49, 130, 132) 50%)",
+        "paths": ["RI", "BL", "HR", "OP"],
+        "stats": {
+                "clear": 2,
+                "boss": 4,
+                "ease": 4,
+                "mobility": 4,
+                "stat": "INT",
+                "element": "aether",
+                "archetype": "knight",
+                "trait": "imperial",
+                "style": "melee",
+                "gender": "male"
+        }
       },
       "BL": {
         "name": "Bluhen",
-        "role": "Magical Support",
+        "type": "Magical",
+        "role": "Support",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/BL.png",
         "img": "img/portraits/12-AIN/BL.png",
+        "mc": "img/portraits/12-AIN/MC_BL.png",
         "crop": "img/portraits-cropped/12-AIN/MC_BL.png",
-        "paths": ["RI", "BL", "HR", "OP"]
+        "gradient": "linear-gradient(to bottom, rgb(3, 8, 30) 0%, rgb(49, 130, 132) 50%)",
+        "paths": ["RI", "BL", "HR", "OP"],
+        "stats": {
+                "clear": 4,
+                "boss": 2,
+                "ease": 2,
+                "mobility": 4,
+                "stat": "LCK",
+                "element": "aether",
+                "archetype": "medic",
+                "trait": "rebellion",
+                "style": "ranged",
+                "gender": "male"
+        }
       },
       "HR": {
         "name": "Herrscher",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/HR.png",
         "img": "img/portraits/12-AIN/HR.png",
+        "mc": "img/portraits/12-AIN/MC_HR.png",
         "crop": "img/portraits-cropped/12-AIN/MC_HR.png",
-        "paths": ["RI", "BL", "HR", "OP"]
+        "gradient": "linear-gradient(to bottom, rgb(3, 8, 30) 0%, rgb(49, 130, 132) 50%)",
+        "paths": ["RI", "BL", "HR", "OP"],
+        "stats": {
+                "clear": 2,
+                "boss": 4,
+                "ease": 2,
+                "mobility": 3,
+                "stat": "STR",
+                "element": "aether",
+                "archetype": "lancer",
+                "trait": "transform",
+                "style": "melee",
+                "gender": "male"
+        }
       },
       "OP": {
         "name": "Opferung",
-        "role": "Physical Hybrid",
+        "type": "Physical",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/OP.png",
         "img": "img/portraits/12-AIN/OP.png",
+        "mc": "img/portraits/12-AIN/MC_OP.png",
         "crop": "img/portraits-cropped/12-AIN/MC_OP.png",
-        "paths": ["RI", "BL", "HR", "OP"]
+        "gradient": "linear-gradient(to bottom, rgb(3, 8, 30) 0%, rgb(49, 130, 132) 50%)",
+        "paths": ["RI", "BL", "HR", "OP"],
+        "stats": {
+                "clear": 5,
+                "boss": 3,
+                "ease": 4,
+                "mobility": 4,
+                "stat": "SPD",
+                "element": "aether",
+                "archetype": "assassin",
+                "trait": "revelation",
+                "style": "melee",
+                "gender": "male"
+        }
       }
     }
   },
@@ -556,43 +1324,107 @@
     "jobs": {
       "ETW": {
         "name": "Eternity Winner",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "A hard-hitting fist-fighter.",
         "pros": "High damage ceiling",
         "cons": "Reliance on active commands can be a learning curve",
+        "icon": "img/icons/ETW.png",
         "img": "img/portraits/13-LABY/ETW.png",
+        "mc": "img/portraits/13-LABY/MC_ETW.png",
         "crop": "img/portraits-cropped/13-LABY/MC_ETW.png",
-        "paths": ["ETW", "RAS", "NL", "TP"]
+        "gradient": "linear-gradient(to bottom, rgb(10, 13, 33) 0%, rgb(189, 106, 149) 50%)",
+        "paths": ["ETW", "RAS", "NL", "TP"],
+        "stats": {
+                "clear": 3,
+                "boss": 3,
+                "ease": 4,
+                "mobility": 4,
+                "stat": "STR",
+                "element": "earth",
+                "archetype": "brawler",
+                "trait": "rebellion",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "RAS": {
         "name": "Radiant Soul",
-        "role": "Magical Support",
+        "type": "Magical",
+        "role": "Support",
         "desc": "Well-rounded and easy to learn healer.",
         "pros": "Longest freeze and great supporting capabilities, not hard to learn.",
         "cons": "Skill casting can be a bit slow",
+        "icon": "img/icons/RAS.png",
         "img": "img/portraits/13-LABY/RAS.png",
+        "mc": "img/portraits/13-LABY/MC_RAS.png",
         "crop": "img/portraits-cropped/13-LABY/MC_RAS.png",
-        "paths": ["ETW", "RAS", "NL", "TP"]
+        "gradient": "linear-gradient(to bottom, rgb(10, 13, 33) 0%, rgb(189, 106, 149) 50%)",
+        "paths": ["ETW", "RAS", "NL", "TP"],
+        "stats": {
+                "clear": 4,
+                "boss": 3,
+                "ease": 5,
+                "mobility": 4,
+                "stat": "LCK",
+                "element": "earth",
+                "archetype": "medic",
+                "trait": "imperial",
+                "style": "ranged",
+                "gender": "female"
+        }
       },
       "NL": {
         "name": "Nisha Labyrinth",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "A devoted savior just for Laby.",
         "pros": "Valuable asset on the team",
         "cons": "Rotationally dependent",
+        "icon": "img/icons/NL.png",
         "img": "img/portraits/13-LABY/NL.png",
+        "mc": "img/portraits/13-LABY/MC_NL.png",
         "crop": "img/portraits-cropped/13-LABY/MC_NL.png",
-        "paths": ["ETW", "RAS", "NL", "TP"]
+        "gradient": "linear-gradient(to bottom, rgb(10, 13, 33) 0%, rgb(189, 106, 149) 50%)",
+        "paths": ["ETW", "RAS", "NL", "TP"],
+        "stats": {
+                "clear": 3,
+                "boss": 3,
+                "ease": 2,
+                "mobility": 4,
+                "stat": "INT",
+                "element": "earth",
+                "archetype": "commander",
+                "trait": "transform",
+                "style": "ranged",
+                "gender": "female"
+        }
       },
       "TP": {
         "name": "Twins Picaro",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "The ultimate prankster.",
         "pros": "Ridiculously high damage",
         "cons": "Offers nothing else",
+        "icon": "img/icons/TP.png",
         "img": "img/portraits/13-LABY/TP.png",
+        "mc": "img/portraits/13-LABY/MC_TP.png",
         "crop": "img/portraits-cropped/13-LABY/MC_TP.png",
-        "paths": ["ETW", "RAS", "NL", "TP"]
+        "gradient": "linear-gradient(to bottom, rgb(10, 13, 33) 0%, rgb(189, 106, 149) 50%)",
+        "paths": ["ETW", "RAS", "NL", "TP"],
+        "stats": {
+                "clear": 5,
+                "boss": 5,
+                "ease": 4,
+                "mobility": 4,
+                "stat": "STR",
+                "element": "earth",
+                "archetype": "berserker",
+                "trait": "revelation",
+                "style": "melee",
+                "gender": "female"
+        }
       }
     }
   },
@@ -602,43 +1434,107 @@
     "jobs": {
       "LIB": {
         "name": "Liberator",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/LIB.png",
         "img": "img/portraits/14-NOAH/LIB.png",
+        "mc": "img/portraits/14-NOAH/MC_LIB.png",
         "crop": "img/portraits-cropped/14-NOAH/MC_LIB.png",
-        "paths": ["LIB", "CEL", "NP", "MO"]
+        "gradient": "linear-gradient(to bottom, rgb(2, 3, 11) 0%, rgb(41, 42, 73) 50%)",
+        "paths": ["LIB", "CEL", "NP", "MO"],
+        "stats": {
+                "clear": 3,
+                "boss": 4,
+                "ease": 3,
+                "mobility": 3,
+                "stat": "SPD",
+                "element": "moon",
+                "archetype": "assassin",
+                "trait": "imperial",
+                "style": "melee",
+                "gender": "male"
+        }
       },
       "CEL": {
         "name": "Celestia",
-        "role": "Magical Hybrid",
+        "type": "Magical",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/CEL.png",
         "img": "img/portraits/14-NOAH/CEL.png",
+        "mc": "img/portraits/14-NOAH/MC_CEL.png",
         "crop": "img/portraits-cropped/14-NOAH/MC_CEL.png",
-        "paths": ["LIB", "CEL", "NP", "MO"]
+        "gradient": "linear-gradient(to bottom, rgb(2, 3, 11) 0%, rgb(41, 42, 73) 50%)",
+        "paths": ["LIB", "CEL", "NP", "MO"],
+        "stats": {
+                "clear": 4,
+                "boss": 4,
+                "ease": 3,
+                "mobility": 3,
+                "stat": "LCK",
+                "element": "moon",
+                "archetype": "magician",
+                "trait": "rebellion",
+                "style": "ranged",
+                "gender": "male"
+        }
       },
       "NP": {
         "name": "Nyx Pieta",
-        "role": "Physical Support",
+        "type": "Physical",
+        "role": "Support",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/NP.png",
         "img": "img/portraits/14-NOAH/NP.png",
+        "mc": "img/portraits/14-NOAH/MC_NP.png",
         "crop": "img/portraits-cropped/14-NOAH/MC_NP.png",
-        "paths": ["LIB", "CEL", "NP", "MO"]
+        "gradient": "linear-gradient(to bottom, rgb(2, 3, 11) 0%, rgb(41, 42, 73) 50%)",
+        "paths": ["LIB", "CEL", "NP", "MO"],
+        "stats": {
+                "clear": 2,
+                "boss": 4,
+                "ease": 3,
+                "mobility": 3,
+                "stat": "INT",
+                "element": "moon",
+                "archetype": "medic",
+                "trait": "transform",
+                "style": "melee",
+                "gender": "male"
+        }
       },
       "MO": {
         "name": "Morpheus",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/MO.png",
         "img": "img/portraits/14-NOAH/MO.png",
+        "mc": "img/portraits/14-NOAH/MC_MO.png",
         "crop": "img/portraits-cropped/14-NOAH/MC_MO.png",
-        "paths": ["LIB", "CEL", "NP", "MO"]
+        "gradient": "linear-gradient(to bottom, rgb(2, 3, 11) 0%, rgb(41, 42, 73) 50%)",
+        "paths": ["LIB", "CEL", "NP", "MO"],
+        "stats": {
+                "clear": 4,
+                "boss": 5,
+                "ease": 4,
+                "mobility": 3,
+                "stat": "STR",
+                "element": "moon",
+                "archetype": "berserker",
+                "trait": "revelation",
+                "style": "ranged",
+                "gender": "male"
+        }
       }
     }
   },
@@ -648,43 +1544,107 @@
     "jobs": {
       "GB": {
         "name": "Gembliss",
-        "role": "Physical DPS",
+        "type": "Physical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/GB.png",
         "img": "img/portraits/15-LITHIA/GB.png",
+        "mc": "img/portraits/15-LITHIA/MC_GB.png",
         "crop": "img/portraits-cropped/15-LITHIA/MC_GB.png",
-        "paths": ["GB", "AV", "AC", "MC"]
+        "gradient": "linear-gradient(to bottom, rgb(4, 9, 18) 0%, rgb(0, 116, 89) 50%)",
+        "paths": ["GB", "AV", "AC", "MC"],
+        "stats": {
+                "clear": 4,
+                "boss": 4,
+                "ease": 4,
+                "mobility": 5,
+                "stat": "STR",
+                "element": "earth",
+                "archetype": "lancer",
+                "trait": "imperial",
+                "style": "melee",
+                "gender": "female"
+        }
       },
       "AV": {
         "name": "Avarice",
-        "role": "Physical Support",
+        "type": "Physical",
+        "role": "Support",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/AV.png",
         "img": "img/portraits/15-LITHIA/AV.png",
+        "mc": "img/portraits/15-LITHIA/MC_AV.png",
         "crop": "img/portraits-cropped/15-LITHIA/MC_AV.png",
-        "paths": ["GB", "AV", "AC", "MC"]
+        "gradient": "linear-gradient(to bottom, rgb(4, 9, 18) 0%, rgb(0, 116, 89) 50%)",
+        "paths": ["GB", "AV", "AC", "MC"],
+        "stats": {
+                "clear": 3,
+                "boss": 3,
+                "ease": 4,
+                "mobility": 5,
+                "stat": "LCK",
+                "element": "earth",
+                "archetype": "medic",
+                "trait": "rebellion",
+                "style": "ranged",
+                "gender": "female"
+        }
       },
       "AC": {
         "name": "Achlys",
-        "role": "Magical Hybrid",
+        "type": "Magical",
+        "role": "Synergy DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/AC.png",
         "img": "img/portraits/15-LITHIA/AC.png",
+        "mc": "img/portraits/15-LITHIA/MC_AC.png",
         "crop": "img/portraits-cropped/15-LITHIA/MC_AC.png",
-        "paths": ["GB", "AV", "AC", "MC"]
+        "gradient": "linear-gradient(to bottom, rgb(4, 9, 18) 0%, rgb(0, 116, 89) 50%)",
+        "paths": ["GB", "AV", "AC", "MC"],
+        "stats": {
+                "clear": 3,
+                "boss": 4,
+                "ease": 3,
+                "mobility": 5,
+                "stat": "INT",
+                "element": "earth",
+                "archetype": "scientist",
+                "trait": "transform",
+                "style": "ranged",
+                "gender": "female"
+        }
       },
       "MC": {
         "name": "Mischief",
-        "role": "Magical DPS",
+        "type": "Magical",
+        "role": "DPS",
         "desc": "placeholder",
         "pros": "placeholder",
         "cons": "placeholder",
+        "icon": "img/icons/MC.png",
         "img": "img/portraits/15-LITHIA/MC.png",
+        "mc": "img/portraits/15-LITHIA/MC_MC.png",
         "crop": "img/portraits-cropped/15-LITHIA/MC_MC.png",
-        "paths": ["GB", "AV", "AC", "MC"]
+        "gradient": "linear-gradient(to bottom, rgb(4, 9, 18) 0%, rgb(0, 116, 89) 50%)",
+        "paths": ["GB", "AV", "AC", "MC"],
+        "stats": {
+                "clear": 3,
+                "boss": 5,
+                "ease": 4,
+                "mobility": 5,
+                "stat": "STR",
+                "element": "earth",
+                "archetype": "berserker",
+                "trait": "revelation",
+                "style": "melee",
+                "gender": "female"
+        }
       }
     }
   }

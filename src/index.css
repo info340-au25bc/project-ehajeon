@@ -352,12 +352,14 @@ a:hover {
 
 .result {
     position: relative;
-    background-image: linear-gradient(to bottom, rgb(14, 14, 14) 0%, rgb(126, 45, 71) 50%);
+    background-image: linear-gradient(to bottom, rgb(1, 1, 17) 0%, rgb(71, 40, 113) 50%);
     border: #0b0b0d solid 1px;
+    height: 50%;
 }
 
 .result img {
     width: 100vw;
+    max-width: inherit;
     padding: 0;
     display: block;
 }
@@ -366,14 +368,18 @@ a:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 30%;
+    height: 20%;
     padding: 5px;
     background-color: #0b0b0dcb;
     color: white;
+    overflow: hidden;
 }
 
 .result-overview {
+    font-size: 2vw;
     text-align: center;
+    max-height: 100%;
+    overflow-y: auto;
 }
 
 .ranked-results {
@@ -663,6 +669,10 @@ a:hover {
         flex-direction: row;
     }
 
+    .result-overview {
+        font-size: 1.6vw;
+    }
+
     .user-progress {
         flex-direction: row;
         align-items: flex-start;
@@ -676,10 +686,6 @@ a:hover {
 
     .user-profile {
         margin: 20px 20px;
-    }
-
-    .result-overview {
-        font-size: 1.5rem;
     }
 
     .party-view {
@@ -704,8 +710,13 @@ a:hover {
         height: 300px;
         width: 25%;
     }
+
     .buffs li {
         margin: 5px;
+    }
+
+    .result-overview {
+        font-size: 1.5rem;
     }
 
 }

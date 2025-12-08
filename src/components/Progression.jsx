@@ -1,5 +1,13 @@
 import React from "react";
 
+// add more boxes, but try to make them collapsible
+// be able to create new character profiles that retain their progression data
+// ^ this is where <form> comes in... user can input profile data, such as profile name 
+// consider errors
+// information about each that shows a pop-up
+// consider presenting it in a roadmap layout as well! group certain ones in progressive order by priority. horizontally scrollable on larger screens, vertically on small ones
+// add expandable pop-up for what char profile already has
+
 export function Progression(props) {
     return(
         <div>
