@@ -4,13 +4,21 @@ import { Button, Dropdown, Modal } from 'react-bootstrap';
 import CHAR_DATA from "../data/chars.json";
 import PROG_DATA from "../data/checklist.json"
 
+// Notes:
+// - Consider adding tooltips
+// - Allow users to edit the same user profile (was an oversight...)
+// - New Page: ESPC 
+// - [DATA] Add more progression systems and goals through json file
+// - [Refining] Currently, only one checkbox per region can be opened. See if we can open several (have to check heights first)
+
 export function Progression(props) {
     const charsBase = Object.keys(CHAR_DATA);
 
     // Profiles
     const [profiles, setProfiles] = useState([]);
     const [selectedProfile, setSelectedProfile] = useState(0); //index of current profile
-    const [showModal, setShowModal] = useState(false);
+
+    const [showModal, setShowModal] = useState(false); //pop-up form
     const [formData, setFormData] = useState({
         name: "",
         server: "Solace",
@@ -33,14 +41,16 @@ export function Progression(props) {
     // TOGGLES
     function toggleItem(region, category, item) {
         setProfiles(prev => {
-        const updatedProfiles = [...prev];
-        const profile = { ...updatedProfiles[selectedProfile] };
-        profile.progress = { ...profile.progress };
-        profile.progress[region] = { ...profile.progress[region] };
-        profile.progress[region][category] = { ...profile.progress[region][category] };
-        profile.progress[region][category][item] = !profile.progress[region][category][item];
-        updatedProfiles[selectedProfile] = profile;
-        return updatedProfiles;
+            const updatedProfiles = [...prev];
+            const profile = { ...updatedProfiles[selectedProfile] };
+
+            profile.progress = { ...profile.progress };
+            profile.progress[region] = { ...profile.progress[region] };
+            profile.progress[region][category] = { ...profile.progress[region][category] };
+            profile.progress[region][category][item] = !profile.progress[region][category][item];
+
+            updatedProfiles[selectedProfile] = profile;
+            return updatedProfiles;
         });
     }
 
@@ -53,15 +63,15 @@ export function Progression(props) {
 
   // HELPERS
     function handleFormChange(e) {
-    const { name, value } = e.target;
+        const { name, value } = e.target;
 
-    // If character changes, automatically update job to first available
-    if (name === "char") {
-        const firstJob = Object.keys(CHAR_DATA[value].jobs)[0];
-        setFormData(prev => ({ ...prev, char: value, job: firstJob }));
-    } else {
-        setFormData(prev => ({ ...prev, [name]: value }));
-    }
+        // If character changes, automatically update job to first available
+        if (name === "char") {
+            const firstJob = Object.keys(CHAR_DATA[value].jobs)[0];
+            setFormData(prev => ({ ...prev, char: value, job: firstJob }));
+        } else {
+            setFormData(prev => ({ ...prev, [name]: value }));
+        }
     }
     
     function handleFormSubmit(e) {
@@ -71,9 +81,9 @@ export function Progression(props) {
         for (const region in PROG_DATA) {
             newProgress[region] = {};
             for (const category in PROG_DATA[region]) {
-            newProgress[region][category] = {};
-            PROG_DATA[region][category].forEach(item => {
-                newProgress[region][category][item] = false;
+                newProgress[region][category] = {};
+                PROG_DATA[region][category].forEach(item => {
+                    newProgress[region][category][item] = false;
             });
             }
         }
@@ -96,17 +106,18 @@ export function Progression(props) {
     }
 
     function getInitialProgress() {
-    const init = {};
-    for (const region in PROG_DATA) {
-        init[region] = {};
-        for (const category in PROG_DATA[region]) {
-            init[region][category] = {};
-            PROG_DATA[region][category].forEach(item => {
-                init[region][category][item] = false;
-            });
+        const init = {};
+        
+        for (const region in PROG_DATA) {
+            init[region] = {};
+            for (const category in PROG_DATA[region]) {
+                init[region][category] = {};
+                PROG_DATA[region][category].forEach(item => {
+                    init[region][category][item] = false;
+                });
+            }
         }
-    }
-    return init;
+        return init;
     }
 
     return(

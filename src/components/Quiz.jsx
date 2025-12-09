@@ -3,6 +3,10 @@ import { ExpandOverview } from './QuizPage';
 
 import Q_DATA from "../data/quiz.json";
 
+// Notes:
+// - More visual formatting and appeal to Quiz questions
+// - [DATA] Fill out Character Descriptions!
+
 export function Quiz({ chars }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
@@ -43,7 +47,6 @@ export function Quiz({ chars }) {
 }
 
 // SCORE ANSWERS
-
 function scoreAnswers(userAnswers, chars) {
   let answerPool = [];
 
@@ -106,10 +109,10 @@ function scoreAnswers(userAnswers, chars) {
 };
 
 // DISPLAY RESULTS
-
 export function QuizResult({ results, chars }) {
   const [selectedResult, setSelectedResult] = useState(0);
   const topResult = results[selectedResult];
+  
   const [selectedChar, setSelectedChar] = useState(null);
   const [activeJob, setActiveJob] = useState(null);
 

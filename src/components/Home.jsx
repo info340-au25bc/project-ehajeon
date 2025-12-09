@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+// Notes: boostrap react carousel for larger screens
+
 export default function Home(props) {
     return(
         <main>

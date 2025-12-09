@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Notes: Figure out firebase, bind user account to quiz results and saved character profiles
 
 export function LogInRegister(props) {
     return (

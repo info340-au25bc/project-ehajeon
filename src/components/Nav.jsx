@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router';
-import { LogInRegister } from './Login';
 
 export function Navigation(props) {
     const [isActive, setIsActive] = useState(false);

@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
 import BUFF_DATA from '../data/buffs.json'
 
-// Step-By-Step Intended Process
+// Step-By-Step Process
 // 1. Select type of content (Raid) --> Number of slots should change dynamically
 // 2. Like the ESPC system, click on character icons to slot them into the composition.
 //     -> Should gray out icon, and upon hover, display an X
 //     -> Cropped character portrait should be inserted into the slot
 // 3. Should also display the buffs/debuffs/potential healing they bring in boxed lists to the bottom (mobile) or right (desktop) containers next to the party slots. 
+
+// Notes:
+// - Make adding/removing more obvious
+// - Add filtering to review what kinds of buffs/debuffs are covered (assign types to json)
+// - [DATA] Add icons and maybe hover-able tooltips to buffs/debuffs
+// - [Feature] Add certain warnings/indicators to add more cda/healing/etc. (assign types to json) based on certain comps. Was not included in this iteration as it did not pan out well in practice; best compromise would be bullet point 2
+// - [Refining] Break-up BuildParty component
 
 export function BuildParty({ chars }) {
     const charsBase = Object.keys(chars);
@@ -33,7 +40,6 @@ export function BuildParty({ chars }) {
     }
 
     // ADD AND REMOVE FROM PARTY
-
     function addToParty(job) {
         setParty(prev => {
             if (prev.includes(job)) return prev; // prevent duplicate characters 
@@ -56,7 +62,6 @@ export function BuildParty({ chars }) {
     }
 
     // BUFF DISPLAY
-
     function activeBuffs() {
         const buffs = {};
         const debuffs = {};
