@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import CHAR_DATA from '../data/chars.json';
 import BUFF_DATA from '../data/buffs.json'
 
 // Step-By-Step Intended Process
@@ -9,9 +8,8 @@ import BUFF_DATA from '../data/buffs.json'
 //     -> Cropped character portrait should be inserted into the slot
 // 3. Should also display the buffs/debuffs/potential healing they bring in boxed lists to the bottom (mobile) or right (desktop) containers next to the party slots. 
 
-export function BuildParty(props) {
-    // CONSTANTS
-    const charsBase = Object.keys(CHAR_DATA);
+export function BuildParty({ chars }) {
+    const charsBase = Object.keys(chars);
 
     const raidSlots = {
         Rosso: 6,
@@ -21,16 +19,13 @@ export function BuildParty(props) {
     };
 
     // RAID STATES
-
     const [raidSelect, setRaidSelect] = useState(null);
     const [slotCount, setSlotCount] = useState(raidSlots[null]);
 
     // PARTY STATES
-
     const [party, setParty] = useState([null, null, null, null, null, null]);
 
     // RAID SELECT
-
     function raidSelector(raid) {
         setRaidSelect(raid);
         setSlotCount(raidSlots[raid]);
@@ -161,8 +156,8 @@ export function BuildParty(props) {
                 </div>
 
                 <div className="espc">
-                    {Object.keys(CHAR_DATA).map(base => {
-                        const character = CHAR_DATA[base];
+                    {Object.keys(chars).map(base => {
+                        const character = chars[base];
 
                         return Object.keys(character.jobs).map(jobKey => {
                             const job = character.jobs[jobKey];

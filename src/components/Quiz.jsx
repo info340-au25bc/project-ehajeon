@@ -1,21 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { ExpandOverview } from './QuizPage';
-import { Link } from 'react-router';
 
-import CHAR_DATA from "../data/chars.json";
 import Q_DATA from "../data/quiz.json";
 
-export function Quiz(props) {
+export function Quiz({ chars }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
 
   if (currentQuestion >= Q_DATA.questions.length) {
-    const topResults = scoreAnswers(userAnswers);
-    return <QuizResult results={topResults} />;
+    const topResults = scoreAnswers(userAnswers, chars);
+    return <QuizResult results={topResults} chars={chars} />;
   }
 
   const question = Q_DATA.questions[currentQuestion];
 
+  // HANDLERS
   function handleAnswer(answer) {
     setUserAnswers([...userAnswers, answer]); // Add answer to array
     console.log("User picked: ", answer.ans);
@@ -45,11 +44,11 @@ export function Quiz(props) {
 
 // SCORE ANSWERS
 
-function scoreAnswers(userAnswers) {
+function scoreAnswers(userAnswers, chars) {
   let answerPool = [];
 
-  for (const charKey in CHAR_DATA) {
-    const char = CHAR_DATA[charKey];
+  for (const charKey in chars) {
+    const char = chars[charKey];
     for (const jobKey in char.jobs) {
       answerPool.push({...char.jobs[jobKey], charName: charKey, _score: 0});
     }
@@ -108,16 +107,16 @@ function scoreAnswers(userAnswers) {
 
 // DISPLAY RESULTS
 
-export function QuizResult({ results }) {
+export function QuizResult({ results, chars }) {
   const [selectedResult, setSelectedResult] = useState(0);
   const topResult = results[selectedResult];
   const [selectedChar, setSelectedChar] = useState(null);
   const [activeJob, setActiveJob] = useState(null);
 
-  const charsBase = Object.keys(CHAR_DATA);
+  const charsBase = Object.keys(chars);
 
   function handleSelect(base) {
-    const char = CHAR_DATA[base];
+    const char = chars[base];
     const defaultJob = Object.keys(char.jobs)[0];
     
     setSelectedChar(char);

@@ -10,6 +10,7 @@ import { LogInRegister } from './Login.jsx';
 import { Quiz } from './Quiz.jsx';
 
 import CHAR_DATA from '../data/chars.json';
+var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
 
 function App(props) {
@@ -22,9 +23,9 @@ function App(props) {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="quiz/*" element={<QuizPage chars={CHAR_DATA} />} />
-            <Route path="questions" element={<Quiz />} />
-            <Route path="buildparty" element={<BuildParty />} />
-            <Route path="progression" element={<Progression />} />
+            <Route path="questions" element={<Quiz chars={CHAR_DATA}/>} />
+            <Route path="buildparty" element={<BuildParty chars={CHAR_DATA}/>} />
+            <Route path="progression" element={<Progression chars={CHAR_DATA}/>} />
             <Route path="login" element={<LogInRegister />} />
         </Routes>
 

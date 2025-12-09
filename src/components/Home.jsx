@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router';
+import { Link } from 'react-router';
 
 export default function Home(props) {
     return(
@@ -10,9 +10,9 @@ export default function Home(props) {
                 <p>Elguide is a small student project about the MMO Elsword, aiming to help early and mid-game players figure out how to get the most out of the game; specifically, to make informed decisions without resorting to p2w methods or dig around Reddit/Discord for answers. Essentially, consider it as a beginner's guide!</p>
             </header>
 
-                <h2>Last Updated (11/9/2025)</h2>
+                <h2>Last Updated (12/8/2025)</h2>
                 <ul>
-                    <li>Added all Prelim designs of pages!</li>
+                    <li>Completed for the specs of Final Deliverable!</li>
                 </ul>
             </div>
 
