@@ -1,21 +1,7 @@
 import React from 'react';
-import { getAuth, EmailAuthProvider, GoogleAuthProvider } from 'firebase/auth'
-
-import StyledFirebaseAuth from './StyledFirebaseAuth'; //install option 2
 
 
 export function LogInRegister(props) {
-    const firebaseUIConfig = {
-        signInOptions: [
-            GoogleAuthProvider.PROVIDER_ID,
-            { provider: EmailAuthProvider.PROVIDER_ID, requiredDisplayName: true },
-        ],
-        signInFlow: 'popup', 
-        callbacks: {
-            signInSuccessWithAuthResult: () =>  false,
-            }
-        };
-    
     return (
     <div>
         <main>
