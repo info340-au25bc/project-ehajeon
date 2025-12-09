@@ -13,6 +13,7 @@
         "img": "img/portraits/01-ELS/KE.png",
         "mc": "img/portraits/01-ELS/MC_KE.png",
         "crop": "img/portraits-cropped/01-ELS/MC_KE.png",
+        "ncrop": "img/portraits-cropped/01-ELS/KE.png",
         "gradient": "linear-gradient(to bottom, rgb(14, 14, 14) 0%, rgb(148, 30, 30) 50%)",
         "paths": ["KE", "RM", "IM", "GN"],
         "stats": {
@@ -39,6 +40,7 @@
         "img": "img/portraits/01-ELS/RM.png",
         "mc": "img/portraits/01-ELS/MC_RM.png",
         "crop": "img/portraits-cropped/01-ELS/MC_RM.png",
+        "ncrop": "img/portraits-cropped/01-ELS/RM.png",
         "gradient": "linear-gradient(to bottom, rgb(14, 14, 14) 0%, rgb(148, 30, 30) 50%)",
         "paths": ["KE", "RM", "IM", "GN"],
         "stats": {
@@ -65,6 +67,7 @@
         "img": "img/portraits/01-ELS/IM.png",
         "mc": "img/portraits/01-ELS/MC_IM.png",
         "crop": "img/portraits-cropped/01-ELS/MC_IM.png",
+        "ncrop": "img/portraits-cropped/01-ELS/IM.png",
         "gradient": "linear-gradient(to bottom, rgb(14, 14, 14) 0%, rgb(148, 30, 30) 50%)",
         "paths": ["KE", "RM", "IM", "GN"],
         "stats": {
@@ -91,6 +94,7 @@
         "img": "img/portraits/01-ELS/GN.png",
         "mc": "img/portraits/01-ELS/MC_GN.png",
         "crop": "img/portraits-cropped/01-ELS/MC_GN.png",
+        "ncrop": "img/portraits-cropped/01-ELS/GN.png",
         "gradient": "linear-gradient(to bottom, rgb(14, 14, 14) 0%, rgb(148, 30, 30) 50%)",
         "paths": ["KE", "RM", "IM", "GN"],
         "stats": {
@@ -233,6 +237,7 @@
         "img": "img/portraits/03-RENA/AN.png",
         "mc": "img/portraits/03-RENA/MC_AN.png",
         "crop": "img/portraits-cropped/03-RENA/MC_AN.png",
+        "ncrop": "img/portraits-cropped/03-RENA/AN.png",
         "gradient": "linear-gradient(to bottom, rgb(16, 23, 24) 0%, rgb(130, 175, 111) 50%)",
         "paths": ["AN", "DAB", "TW", "PR"],
         "stats": {

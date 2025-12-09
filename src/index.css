@@ -501,7 +501,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     background-color: #0b0b0d9d;
-    width: 100%;
+    width: 100vw;
 }
 
 .user-profile {
@@ -537,14 +537,26 @@ a:hover {
 
 .checklist {
     display: flex;
-    flex-wrap: wrap;
-    flex: 3;
-    justify-content: center;
-    background-color: #0d0d0fb2;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: normal;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.region-box {
+    flex: 0 0 auto;
+    min-width: 300px;
+    height: 100%;
 }
 
 .box {
     background-color: #36363d;
+    justify-content: center;
     width: fit-content;
     border: rgba(255, 255, 255, 0.076) solid 1px;
     border-radius: 0 0 20px 20px;
@@ -556,19 +568,26 @@ a:hover {
     color: white;
     cursor: pointer;
     padding: 15px;
+    min-width: 300px;
     width: 100%;
     border: none;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 20px 20px;
     text-align: left;
     font-size: 15px;
 }
 
 .content {
     background-color: #36363d;
+    max-height: 0;
     line-height: 1.5;
     padding: 0 45px 0 0;
     border-radius: 0 0 20px 20px;
-    /* display: none; */
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+
+.content.open {
+    max-height: 200px;
 }
 
 .content li {
@@ -620,6 +639,58 @@ a:hover {
     display: inline-block;
     margin-top: 0;
     text-align: left;
+}
+
+/* Bootstrap React */
+.dropdown-menu {
+    display: none;
+    z-index: 1050;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    display: none;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  padding: 30px;
+  border-radius: 8px;
+  z-index: 1000;
+  color: #fff;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-header, .modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.modal-body label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-body input, .modal-body select {
+    display: block;
+    margin-right: 10px;
 }
 
 /* for larger screens */
@@ -677,11 +748,21 @@ a:hover {
         flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start;
-        height: 100vh;
+        margin-left: 230px;
+        height: 100%;
     }
 
     .checklist {
-        margin: 30px 10px;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        height: 100vh;
+    }
+
+    .region-box {
+        margin-top: 50px;
     }
 
     .user-profile {

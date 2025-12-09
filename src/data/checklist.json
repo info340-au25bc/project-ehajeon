@@ -1,0 +1,25 @@
+{
+    "Elrianode": {
+        "Titles": ["Pierce the Heavens", "Guardian of Elrianode"],
+        "Gear": ["Elrianode Gear"]
+    },
+
+    "Varnimyr": {
+        "Titles": ["Forginay Fruit"],
+        "Weapon": ["Flames of Judgement"],
+        "Accessories": ["Demonic Vine Crown", "Agate Fragment", "Code of Honor"],
+        "Raid Accessories": ["Mark of Inferno", "Demonic Eye", "Undying Flame"]
+    },
+
+    "Rigomor": {
+        "Titles": ["Survival of the Cold", "The Setting Sun"],
+        "Gear": ["Rigomor Armor"],
+        "Accessories": ["Energy Conversion Device"]
+    },
+
+    "Pruinaum": {
+        "Titles": ["Versatility", "Night Parade of the White-Ghost", "Black and White"],
+        "Accessories": ["Mark of Alliance", "Baryon's Fur", "Engine Cooling System"],
+        "Raid Accessories": ["Military Officer Earpiece", "Soul Crown"]
+    }
+}
