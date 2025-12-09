@@ -1,29 +1,8 @@
-# Updated Content (11/21)
-## Proposal
-- Added lang="en" to <html>
-- Added meta viewport
+# Updated Content (12/8)
+## Complete Web App
+More or less should cover most requirements on the assignment instructions, but Firebase was giving me a really hard time; will have to implement it after tonight's due date in a separate supplementary release once I figure it out.
 
-## Draft 1
-- Added formal header element
-- Removed a tags from buttons
-- Small revisions to CSS rules
-- Changed login/register input ids
-- Note: not sure how to handle aria-labels at the moment, so I've removed them for now :c
-
-## Draft 2
-- Mainly worked on implementing the functionalities for PartyBuilder.jsx! Please refer to this page as the 'completed feature'.
-- Other minor interactions that previously existed in Draft 1 were migrated
-
-### Important Draft 2 Notes
-- Not all data has been filled out yet! Only 6 character entries currently actually 'work' (are added to the party composition with portraits and raid) for testing purposes.
-- Quiz pages not added to this Draft 2 submission (refer to Quiz.jsx) for the time being. Currently in the process of adding/streamlining the questions and making sure I have a scoring system that works properly on the side!
-
-Release Draft 2-1 (which will be after the due date) aims to complete three things: full json data, quiz pages added, and CSS rule review.
-
-## Still Needs Work
-- Conversion of DOM elements from other pages into .map() loops
-- Need to improve the organization structure of Components/functions
-
+Future mini updates to include dataset fixes, so not much to do with the code (which I'd only foresee fixing up in terms of organization). These will be documented here on git, but are otherwise mainly used to streamline the experience on the Firebase deployment.
 
 # React + Vite
 
