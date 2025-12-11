@@ -191,7 +191,7 @@ a:hover {
     right: 0;
 }
 
-.right-items a, .button {
+.right-items a, .button, .sign-out {
     background-color: #212127;
     color: white;
     margin: 5px 0 0 5px;

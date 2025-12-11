@@ -1,16 +1,27 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router';
+import { useAuth } from '../contexts/authContext';
+import { signOut } from '../firebase/auth';
 
 export function Navigation(props) {
     const [isActive, setIsActive] = useState(false);
+    const { userLoggedIn } = useAuth();
 
     function handleClick() {
         setIsActive(!isActive);
-    }
+    };
 
     function handleClose() {
         setIsActive(false);
-    }
+    };
+
+    const handleSignOut = async () => {
+        try {
+            await signOut();
+        } catch (error) {
+            console.error("Couldn't sign out", error);
+        }
+    };
 
     let hamClass = "hamburger-menu";
     let menuClass = "off-screen-menu";
@@ -18,7 +29,7 @@ export function Navigation(props) {
     if (isActive) {
         hamClass += " active";
         menuClass += " active";
-    }
+    };
 
     return (
         <div>
@@ -38,7 +49,11 @@ export function Navigation(props) {
                     <span></span>
                 </div>
                 <div className="right-items">
-                    <NavLink to="login">login</NavLink>
+                    {userLoggedIn ? (
+                        <button className="sign-out" onClick={handleSignOut}>sign out</button>
+                    ) : (
+                        <NavLink to="login">login</NavLink>
+                    )}
                     <a>light</a>
                 </div>
             </nav>

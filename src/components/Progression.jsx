@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button, Dropdown, Modal } from 'react-bootstrap';
 
+import { useAuth } from '../contexts/authContext';
+
 import CHAR_DATA from "../data/chars.json";
 import PROG_DATA from "../data/checklist.json"
 
@@ -12,6 +14,13 @@ import PROG_DATA from "../data/checklist.json"
 // - [Refining] Currently, only one checkbox per region can be opened. See if we can open several (have to check heights first)
 
 export function Progression(props) {
+    const { currentUser } = useAuth();
+    let username = 'guest';
+
+    if (currentUser && currentUser.email) {
+        username = currentUser.email.split('@')[0];
+    }
+
     const charsBase = Object.keys(CHAR_DATA);
 
     // Profiles
@@ -129,7 +138,7 @@ export function Progression(props) {
                             <h1>Progression Checklist</h1>
                         </header>
 
-                        <h2>Hi, [Username]!</h2>
+                        <h2>Hi, {username}!</h2>
                         < ProfileSelector
                             profiles={profiles}
                             currentProfile={currentProfile}

@@ -56,15 +56,15 @@
             "question": "Preferred level of mobility?",
             "type": "score",
             "answers": [
-                { "ans": "Easy", "score": { "mobility": 5 } },
-                { "ans": "Medium", "score": { "mobility": 3 } },
-                { "ans": "Hard", "score": { "mobility": 1 } }
+                { "ans": "Flexible", "score": { "mobility": 5 } },
+                { "ans": "Regular", "score": { "mobility": 3 } },
+                { "ans": "Simple", "score": { "mobility": 1 } }
             ]
         },
 
         {
             "id": 6,
-            "question": "Choose your favorite Stat!",
+            "question": "Your favorite stat to invest in?",
             "type": "score",
             "answers": [
                 { "ans": "Strength", "score": { "stat": "STR" } },
@@ -77,7 +77,7 @@
 
         {
             "id": 7,
-            "question": "Choose your favorite Element!",
+            "question": "Your favorite element?",
             "type": "score",
             "answers": [
                 { "ans": "Fire", "score": { "element": "fire" } },
@@ -93,7 +93,7 @@
 
         {
             "id": 8,
-            "question": "Choose your favorite Archetype!",
+            "question": "Your favorite archetype?",
             "type": "score",
             "answers": [
                 { "ans": "Knight", "score": { "archetype": "knight" } },
@@ -112,19 +112,19 @@
 
         {
             "id": 9,
-            "question": "What path would you take?",
+            "question": "What path appeals to you most?",
             "type": "score",
             "answers": [
-                { "ans": "Imperial, following tradition", "score": { "trait": "imperial" } },
-                { "ans": "Rebellion, pursuing freedom", "score": { "trait": "rebellion" } },
-                { "ans": "Transform, to be changed", "score": { "trait": "transform" } },
-                { "ans": "Revelation, returning to origins", "score": { "trait": "revelation" } }
+                { "ans": "Imperial, to follow tradition", "score": { "trait": "imperial" } },
+                { "ans": "Rebellion, to pursue freedom", "score": { "trait": "rebellion" } },
+                { "ans": "Transform, to become anew", "score": { "trait": "transform" } },
+                { "ans": "Revelation, to rediscover origins", "score": { "trait": "revelation" } }
             ]
         },
 
         {
             "id": 10,
-            "question": "Personal fighting style preference?",
+            "question": "Preferred fighting style?",
             "type": "score",
             "answers": [
                 { "ans": "Melee", "score": { "style": "melee" } },

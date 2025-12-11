@@ -1,8 +1,8 @@
-# Updated Content (12/8)
+# Updated Content (12/11)
 ## Complete Web App
-More or less should cover most requirements on the assignment instructions, but Firebase was giving me a really hard time; will have to implement it after tonight's due date in a separate supplementary release once I figure it out.
+Firebase finally implemented! Shoutout to Code Radiance on Youtube. It's the feature that was developed the least, so it's super basic and a bit premature (doesn't check if there's an email already registered specifically, just says 'Failed to register'), but it's there now.
 
-Future mini updates to include dataset fixes, so not much to do with the code (which I'd only foresee fixing up in terms of organization). These will be documented here on git, but are otherwise mainly used to streamline the experience on the Firebase deployment.
+This launch also comes with several additions and revisions to the data json files (but not all of them). These will continue to be documented on git under their own tag (post-project).
 
 # React + Vite
 

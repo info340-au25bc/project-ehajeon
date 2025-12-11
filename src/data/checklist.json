@@ -1,4 +1,12 @@
 {
+    "GENERAL": {
+        "ERP": ["100", "200", "300", "400", "500", "550"],
+        "Force Skills": ["Head Hunter", "Eroding Energy", "Illipa's Aura", "Get Greedy", "Hyper Acceleration"],
+        "Customization": ["Damage Skill Cut-In", "Damage Awakening"],
+        "Pet": ["Mellow/Jay", "Pet Gems", "4000 Points on DPS Pet", "Pet Autoconsume"],
+        "Ice Burner": ["5/5 Costume", "Accessory Combo 1", "Accessory Combo 2", "Accessory Combo 3"]
+    },
+    
     "Elrianode": {
         "Titles": ["Pierce the Heavens", "Guardian of Elrianode"],
         "Gear": ["Elrianode Gear"]
