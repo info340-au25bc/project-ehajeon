@@ -1,8 +1,16 @@
 # Updated Content (12/11)
 ## Complete Web App
-Firebase finally implemented! Shoutout to Code Radiance on Youtube. It's the feature that was developed the least, so it's super basic and a bit premature (doesn't check if there's an email already registered specifically, just says 'Failed to register'), but it's there now.
+Firebase finally implemented! Shoutout to Code Radiance on Youtube. It's the feature that was developed the least, so it's super basic and a bit premature (doesn't check if there's an email already registered specifically, just says 'Failed to register'), but it's there now. Furthermore, with regards to the final project specifications:
+
+- Added a catch-all route in App.jsx for bad URLs
+- Organized the React Components and Structure a bit better! Handling props isn't my strong suit so things will still be a bit awkward/could use optimization here and there.
+- Fixed a couple of bugs (Such as Progression checkmarks leading to bad links without a char profile. They've been changed so that they can only be marked when attached to a char profile).
 
 This launch also comes with several additions and revisions to the data json files (but not all of them). These will continue to be documented on git under their own tag (post-project).
+
+## Post-Project Updates (12/11)
+
+
 
 # React + Vite
 

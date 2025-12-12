@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button, Dropdown, Modal } from 'react-bootstrap';
 
 import { useAuth } from '../contexts/authContext';
+import { doc, setDoc, getDoc } from "firebase/firestore";
+import { db } from "../firebase/firebase";
 
-import CHAR_DATA from "../data/chars.json";
 import PROG_DATA from "../data/checklist.json"
 
 // Notes:
@@ -13,7 +14,7 @@ import PROG_DATA from "../data/checklist.json"
 // - [DATA] Add more progression systems and goals through json file
 // - [Refining] Currently, only one checkbox per region can be opened. See if we can open several (have to check heights first)
 
-export function Progression(props) {
+export function Progression({ chars }) {
     const { currentUser } = useAuth();
     let username = 'guest';
 
@@ -21,7 +22,7 @@ export function Progression(props) {
         username = currentUser.email.split('@')[0];
     }
 
-    const charsBase = Object.keys(CHAR_DATA);
+    const charsBase = Object.keys(chars);
 
     // Profiles
     const [profiles, setProfiles] = useState([]);
@@ -32,23 +33,64 @@ export function Progression(props) {
         name: "",
         server: "Solace",
         char: charsBase[0],
-        job: Object.keys(CHAR_DATA[charsBase[0]].jobs)[0],
+        job: Object.keys(chars[charsBase[0]].jobs)[0],
         progress: getInitialProgress(),
     });
 
     const currentProfile = profiles[selectedProfile] || formData;
 
-    const charData = CHAR_DATA[currentProfile.char];
+    const charData = chars[currentProfile.char];
     const jobKey = charData.jobs[currentProfile.job]
         ? currentProfile.job
-        : Object.keys(charData.jobs)[0];
+        : charData
+            ? Object.keys(charData.jobs)[0]
+            : null;
 
 
-    // Checklist open
+    // Checklist open and loading
     const [open, setOpen] = useState({});
+    const [loading, setLoading] = useState(true);
+
+    // useEffect for char profile persistence in accounts
+    useEffect(() => {
+        if (!currentUser) return;
+
+        const loadProfiles = async () => {
+            const docRef = doc(db, "profiles", currentUser.uid);
+            const docSnap = await getDoc(docRef);
+
+            if (docSnap.exists()) {
+                setProfiles(docSnap.data().profiles || []);
+            }
+            setLoading(false);
+        };
+
+        loadProfiles();
+    }, [currentUser]);
+
+    useEffect(() => {
+        if (!currentUser) return;
+        if (!profiles.length) return;
+
+        const saveProfiles = async () => {
+            const docRef = doc(db, "profiles", currentUser.uid);
+            await setDoc(docRef, { profiles });
+        };
+
+        saveProfiles();
+    }, [profiles, currentUser]);
+
+    if (loading) {
+        console.log("loading...")
+    }
+    else {
+        console.log("loaded!")
+    };
 
     // TOGGLES
     function toggleItem(region, category, item) {
+        if (!profiles[selectedProfile]) return; // if there's nothing to save... (no profile)
+
         setProfiles(prev => {
             const updatedProfiles = [...prev];
             const profile = { ...updatedProfiles[selectedProfile] };
@@ -76,7 +118,7 @@ export function Progression(props) {
 
         // If character changes, automatically update job to first available
         if (name === "char") {
-            const firstJob = Object.keys(CHAR_DATA[value].jobs)[0];
+            const firstJob = Object.keys(chars[value].jobs)[0];
             setFormData(prev => ({ ...prev, char: value, job: firstJob }));
         } else {
             setFormData(prev => ({ ...prev, [name]: value }));
@@ -107,7 +149,7 @@ export function Progression(props) {
             name: "",
             server: "Solace",
             char: charsBase[0],
-            job: Object.keys(CHAR_DATA[charsBase[0]].jobs)[0],
+            job: Object.keys(chars[charsBase[0]].jobs)[0],
             progress: getInitialProgress()
         });
 
@@ -155,6 +197,7 @@ export function Progression(props) {
                         formData={formData}
                         onChange={handleFormChange}
                         onSubmit={handleFormSubmit}
+                        chars={chars}
                         charsBase={charsBase}
                     />
 
@@ -173,28 +216,28 @@ export function Progression(props) {
     )
 };
 
-    function ProfileSelector({ profiles, currentProfile, onSelect, onCreate }) {
-        return (
-            <Dropdown>
-                <Dropdown.Toggle variant="secondary" id="dropdown-autoclose-true">
-                    {currentProfile.name || "Select Profile"}
-                </Dropdown.Toggle>
+function ProfileSelector({ profiles, currentProfile, onSelect, onCreate }) {
+    return (
+        <Dropdown>
+            <Dropdown.Toggle variant="secondary" id="dropdown-autoclose-true">
+                {currentProfile.name || "Select Profile"}
+            </Dropdown.Toggle>
 
-                <Dropdown.Menu>
-                    {profiles.map((p, i) => (
-                    <Dropdown.Item key={i} onClick={() => onSelect(i)}>
-                        {p.name}
-                    </Dropdown.Item>
-                    ))}
-                    <Dropdown.Item onClick={onCreate}>
-                        + Create New Profile
-                    </Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-        );
-    }
+            <Dropdown.Menu>
+                {profiles.map((p, i) => (
+                <Dropdown.Item key={i} onClick={() => onSelect(i)}>
+                    {p.name}
+                </Dropdown.Item>
+                ))}
+                <Dropdown.Item onClick={onCreate}>
+                    + Create New Profile
+                </Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>
+    );
+}
 
-function ProfileModal({ show, onHide, formData, onChange, onSubmit, charsBase }) {
+function ProfileModal({ show, onHide, formData, onChange, onSubmit, chars, charsBase }) {
     return (
         <Modal show={show} onHide={onHide}>
             <Modal.Header closeButton>
@@ -233,8 +276,8 @@ function ProfileModal({ show, onHide, formData, onChange, onSubmit, charsBase })
                     <label>
                         Job:
                         <select name="job" value={formData.job} onChange={onChange}>
-                            {Object.keys(CHAR_DATA[formData.char].jobs).map(j => (
-                            <option key={j} value={j}>{CHAR_DATA[formData.char].jobs[j].name}</option>
+                            {Object.keys(chars[formData.char].jobs).map(j => (
+                            <option key={j} value={j}>{chars[formData.char].jobs[j].name}</option>
                             ))}
                         </select>
                     </label>
@@ -251,6 +294,10 @@ function ProfileModal({ show, onHide, formData, onChange, onSubmit, charsBase })
 }
 
 function CharacterDisplay({ charData, jobKey, charName }) {
+    if (!charData || !jobKey) return (
+        <div>Create or select a profile to see character info</div>
+    );
+
     return (
         <div className="user-char">
             <img src={charData.jobs[jobKey].ncrop} alt={charName} />

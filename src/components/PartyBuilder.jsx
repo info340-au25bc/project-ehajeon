@@ -89,99 +89,122 @@ export function BuildParty({ chars }) {
                     <h1>Party Builder</h1>
                 </header>
 
-                <div className="raid-select">
-                    <div className="dropdown">
-                        <button>{raidSelect || "Select Raid"}</button>
-
-                        <div className="raid">
-                            {Object.keys(raidSlots).map(raidName => (
-                                <a
-                                    key={raidName}
-                                    href="#"
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        raidSelector(raidName);
-                                    }}
-                                >
-                                    {raidName}
-                                </a>
-                            ))}
-                        </div>
-                    </div>
-                </div>
+                <RaidSelector
+                    raids={raidSlots}
+                    selectedRaid={raidSelect}
+                    onSelect={raidSelector}
+                />
 
                 <div className="party-view">
-                    <div className="char-slots">
-                        <ul>
-                            {party.map((jobData, index) => (
-                                <li key={index} className="slot">
-                                    {jobData ? (
-                                        <img
-                                            src={jobData.crop}
-                                            alt={jobData.name}
-                                            onClick={() => removeFromParty(index)}
-                                        />
-                                        ) : (
-                                        <span className="empty"></span>
-                                    )}
-                                </li>
-                                )
-                            )}
-                        </ul>
-                    </div>
-
-                    <div className="buffs">
-                       <h2>Raid Buffs</h2>
-                       <ul>
-                            {Object.entries(activeBuffs().buffs).map(([buffName, buff]) => (
-                                <li key={buffName}>
-                                    <strong>{buffName}</strong>: {buff.effect} ({buff.duration}, CD: {buff.cooldown})
-                                </li>
-                            ))}
-                        </ul>
-
-                        <h2>Raid Debuffs</h2>
-                        <ul>
-                            {Object.entries(activeBuffs().debuffs).map(([debuffName, debuff]) => (
-                                <li key={debuffName}>
-                                    <strong>{debuffName}</strong>: {debuff.effect} ({debuff.duration}, CD: {debuff.cooldown})
-                                </li>
-                            ))}
-                        </ul>
-
-                        <h2>Healing</h2>
-                        <ul>
-                            {Object.entries(activeBuffs().healing).map(([healingName, healing]) => (
-                                <li key={healingName}>
-                                    <strong>{healingName}</strong>: {healing.effect} ({healing.duration}, CD: {healing.cooldown})
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                    <PartySlots
+                        party={party}
+                        onRemove={removeFromParty}
+                    />
                 </div>
 
-                <div className="espc">
-                    {Object.keys(chars).map(base => {
-                        const character = chars[base];
+                <RaidBuffs buffsData={activeBuffs()} />
 
-                        return Object.keys(character.jobs).map(jobKey => {
-                            const job = character.jobs[jobKey];
-                            const isUsed = party.some(p => p?.key === jobKey);
+                <ElSearchParty
+                    chars={chars}
+                    party={party}
+                    onAdd={addToParty}
+                />
 
-                            return (
-                            <img
-                                key={jobKey}
-                                src={`img/icons/${jobKey}.png`}
-                                alt={job.name}
-
-                                className={isUsed ? "grayed-out" : ""}
-                                onClick={() => !isUsed && addToParty({...job, key : jobKey})}
-                            />
-                            );
-                        });
-                    })}
-                </div>
             </main>
         </div>
     );
+};
+
+function RaidSelector ({ raids, selectedRaid, onSelect }) {
+    return (
+        <div className="raid-select">
+            <div className="dropdown">
+                <button>{selectedRaid || "Select Raid"}</button>
+
+                <div className="raid">
+                    {Object.keys(raids).map(raidName => (
+                        <button
+                            key={raidName}
+                            onClick={() => {onSelect(raidName);}}>
+
+                            {raidName}
+                        </button>
+                    ))}
+                </div>
+            </div>
+        </div>
+    )
+};
+
+function PartySlots({ party, onRemove }) {
+    return (
+        <div className="char-slots">
+            <ul>
+                {party.map((jobData, index) => (
+                    <li key={index} className="slot">
+                        {jobData ? (
+                            <img
+                                src={jobData.crop}
+                                alt={jobData.name}
+                                onClick={() => onRemove(index)}
+                            />
+                            ) : (
+                            <span className="empty"></span>
+                        )}
+                    </li>
+                    )
+                )}
+            </ul>
+        </div>
+    )
+};
+
+function RaidBuffs({ buffsData }) {
+    const { buffs, debuffs, healing } = buffsData;
+
+    const renderList = (title, data) => ( // standardize format to cut down repeats!
+        <div>
+            <h2>{title}</h2>
+            <ul>
+                {Object.entries(data).map(([name, info]) => (
+                    <li key={name}>
+                        <strong>{name}</strong>: {info.effect} ({info.duration}, CD: {info.cooldown})
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+    
+    return (
+        <div className="buffs">
+            {renderList("Raid Buffs", buffs)}
+            {renderList("Raid Debuffs", debuffs)}
+            {renderList("Healing", healing)}
+        </div>
+    )
+};
+
+function ElSearchParty({ chars, party, onAdd }) {
+    return (
+        <div className="espc">
+            {Object.keys(chars).map(base => {
+                const character = chars[base];
+
+                return Object.keys(character.jobs).map(jobKey => {
+                    const job = character.jobs[jobKey];
+                    const isUsed = party.some(p => p?.key === jobKey);
+
+                    return (
+                    <img
+                        key={jobKey}
+                        src={`img/icons/${jobKey}.png`}
+                        alt={job.name}
+                        className={isUsed ? "grayed-out" : ""}
+                        onClick={() => !isUsed && onAdd({...job, key : jobKey})}
+                    />
+                    );
+                });
+            })}
+        </div>
+    )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router';
+import { Routes, Route, Navigate } from 'react-router';
 
 import Home from './Home';
 import { QuizPage } from './QuizPage.jsx';
@@ -22,10 +22,12 @@ function App(props) {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="quiz/*" element={<QuizPage chars={CHAR_DATA} />} />
-            <Route path="questions" element={<Quiz chars={CHAR_DATA}/>} />
-            <Route path="buildparty" element={<BuildParty chars={CHAR_DATA}/>} />
+            <Route path="questions" element={<Quiz />} />
+            <Route path="buildparty" element={<BuildParty />} />
             <Route path="progression" element={<Progression chars={CHAR_DATA}/>} />
             <Route path="login" element={<LogInRegister />} />
+
+            <Route path="*" element={<Navigate to="/" />} />
         </Routes>
 
         <footer>

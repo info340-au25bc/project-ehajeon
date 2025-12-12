@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import CHAR_DATA from "../data/chars.json"
 import { Link, useNavigate, useParams } from 'react-router';
 
-export function QuizPage(props) {
+
+
+export function QuizPage({ chars }) {
   const { base, job } = useParams();
   const navigate = useNavigate();  
-  const charsBase = Object.keys(CHAR_DATA);
+  const charsBase = Object.keys(chars);
 
   // STATES
   const [selectedChar, setSelectedChar] = useState(null);
@@ -13,7 +14,7 @@ export function QuizPage(props) {
 
   // HELPERS
   function handleSelect(base) {
-      const char = CHAR_DATA[base];
+      const char = chars[base];
       const defaultJob = Object.keys(char.jobs)[0];
 
       setSelectedChar(char);
@@ -29,22 +30,22 @@ export function QuizPage(props) {
     }
   }
 
-  useEffect(() => {
-    if (base) {
-      const char = CHAR_DATA[base];
-      if (char) {
-        setSelectedChar(char);
-        setActiveJob(job || Object.keys(char.jobs)[0]);
+    useEffect(() => {
+      if (base) {
+        const char = chars[base];
+        if (char) {
+          setSelectedChar(char);
+          setActiveJob(job || Object.keys(char.jobs)[0]);
+        }
       }
-    }
-  }, [base, job]);
+    }, [base, job]);
 
-  useEffect(() => {
-    if (selectedChar) {
-      const overviewDiv = document.getElementById("overview");
-      overviewDiv?.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [selectedChar]);
+    useEffect(() => {
+      if (selectedChar) {
+        const overviewDiv = document.getElementById("overview");
+        overviewDiv?.scrollIntoView({ behavior: "smooth" });
+      }
+    }, [selectedChar]);
 
     return (
         <div>

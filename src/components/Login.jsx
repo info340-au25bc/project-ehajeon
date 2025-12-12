@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Navigate, useNavigate} from 'react-router'
+import { useNavigate} from 'react-router'
 import { signInEmailPassword, createUserEmailPassword } from '../firebase/auth';
 import { useAuth } from '../contexts/authContext/index';
 

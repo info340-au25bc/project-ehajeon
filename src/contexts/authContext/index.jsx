@@ -31,10 +31,15 @@ export function AuthProvider({ children }) {
         setLoading(false);
     }
 
+    const username = currentUser?.email?.split('@')[0] || 'guest';
+    const uid = currentUser?.uid || null;
+    
     const value = {
         currentUser, 
         userLoggedIn,
-        loading
+        loading,
+        username,
+        uid
     }
 
     return (
