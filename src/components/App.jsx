@@ -23,7 +23,7 @@ function App(props) {
             <Route path="/" element={<Home />} />
             <Route path="quiz/*" element={<QuizPage chars={CHAR_DATA} />} />
             <Route path="questions" element={<Quiz chars={CHAR_DATA}/>} />
-            <Route path="buildparty" element={<BuildParty />} />
+            <Route path="buildparty" element={<BuildParty chars={CHAR_DATA}/>} />
             <Route path="progression" element={<Progression chars={CHAR_DATA}/>} />
             <Route path="login" element={<LogInRegister />} />
 
