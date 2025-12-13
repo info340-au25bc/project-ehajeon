@@ -9,7 +9,8 @@ Firebase finally implemented! Shoutout to Code Radiance on Youtube. It's the fea
 This launch also comes with several additions and revisions to the data json files (but not all of them). These will continue to be documented on git under their own tag (post-project).
 
 ## Post-Project Updates (12/11)
-
+- Removed Firebase component (it was copy pasted from the course textbook and I ended up having no idea how to actually use it...)
+- Filled out all character descriptions! Use this build to use the version of the web app that has no placeholder text.
 
 
 # React + Vite
