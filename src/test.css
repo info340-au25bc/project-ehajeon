@@ -416,9 +416,6 @@ a:hover {
     padding: 20px;
     border: none;
     cursor: pointer;
-    display: block;
-    background-color: #303035;
-    text-decoration: none;
 }
 
 .dropdown a {
@@ -446,7 +443,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .char-slots {
@@ -473,16 +470,16 @@ a:hover {
 .buffs {
     max-width: 800px;
     height: 300px;
-    justify-content: center;
+    align-self: center;
+    text-align: center;
     overflow-y: auto;
-    margin-bottom: 30px;
+    padding: 10px;
 }
 
 .buffs ul {
     display: flex;
     flex-wrap: wrap;;
     justify-content: center;
-    padding: 0px;
     gap: 10px;
 }
 
@@ -736,10 +733,6 @@ a:hover {
     .hamburger-menu span {
         display: none;
     }
-
-    .result-overview {
-        margin-left: 230px;
-    }
 }
 
 @media (min-width: 1025px) {
@@ -793,10 +786,10 @@ a:hover {
 
 @media (min-width: 1645px) {
     .buffs {
-        margin: auto;
+        align-self: flex-start;
         text-align: left;
         height: 300px;
-        margin-bottom: 30px;
+        width: 25%;
     }
 
     .buffs li {
